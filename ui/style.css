@@ -1,9 +1,7 @@
 
-
-
 .p {
 
-
+border-radius: 2px;
 background:#7D1935;
     padding: 2px;
   max-width:900px;
@@ -24,11 +22,9 @@ body {
 
 
 h2{
-margin-right:60px;
-  max-width:250px;
-  margin: 10px 30px;
-  color: #7D1935;
 
+  color: #7D1935;
+ margin-left: 6cm;
   font-size: 30px;
 
   
@@ -42,4 +38,6 @@ h3{
   font-size: 30px;
   
 }
+
+
 
