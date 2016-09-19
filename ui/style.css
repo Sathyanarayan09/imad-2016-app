@@ -1,35 +1,10 @@
 
 
-.panel  {
-
-border-radius: 2px;
-background:#7D1935;
-    padding: 2px;
-  max-width:900px;
-  margin: 30px auto;
-
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-
-html {
-  overflow-y: scroll;
-}
-
 body {
   background:#F5F3EE;
 
 }
 
-
-
-h3{
-  text-align: left;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 5px;
-  font-size: 30px;
-
-}
 
 
 
