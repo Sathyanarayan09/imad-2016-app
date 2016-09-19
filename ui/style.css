@@ -1,8 +1,10 @@
 
+
 .panel  {
- border-radius: 2px;
-	background:#7D1935;
-    padding: 20px;
+
+border-radius: 2px;
+background:#7D1935;
+    padding: 2px;
   max-width:900px;
   margin: 30px auto;
 
@@ -20,13 +22,15 @@ body {
 
 
 
-
 h3{
   text-align: left;
   color: #ffffff;
   font-weight: 300;
   margin: 5px;
+  font-size: 30px;
 
 }
+
+
 
 
