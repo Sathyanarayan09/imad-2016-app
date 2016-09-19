@@ -9,9 +9,19 @@ background:#7D1935;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
-
 html {
   overflow-y: scroll;
+}
+img {
+
+
+background:#7D1935;
+    padding: 2px;
+	margin-right:60px;
+  max-width:250px;
+  margin: 20px 60px;
+  border-radius: 60px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
 
@@ -19,22 +29,33 @@ body {
   background:#F5F3EE;
 
 }
-.container
-{
-	margin-left: 8cm;
-	margin-right:60px;
-  margin-top: -6cm;
-  margin-bottom: 3cm;
-	
-}
+
 
 h2{
 
   color: #7D1935;
- margin-left: 6cm;
+ margin-left: 10cm;
+  margin-top: -6cm;
+  margin-bottom: 3cm;
   font-size: 30px;
 
   
+}
+.container
+{
+
+
+    padding: 2px;
+	margin-right:60px;
+  max-width:250px;
+  margin: 20px 60px;
+
+
+	margin-left: 10cm;
+
+  margin-top: -6cm;
+  margin-bottom: 3cm;
+	
 }
 
 h3{
@@ -45,6 +66,4 @@ h3{
   font-size: 30px;
   
 }
-
-
 
