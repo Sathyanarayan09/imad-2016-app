@@ -1,7 +1,6 @@
 
 .p {
 
-
 background:#7D1935;
     padding: 2px;
   max-width:900px;
@@ -9,6 +8,7 @@ background:#7D1935;
   border-radius: 60px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
+
 
 html {
   overflow-y: scroll;
