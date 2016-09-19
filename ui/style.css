@@ -19,7 +19,14 @@ body {
   background:#F5F3EE;
 
 }
-
+.container
+{
+	margin-left: 8cm;
+	margin-right:60px;
+  margin-top: -6cm;
+  margin-bottom: 3cm;
+	
+}
 
 h2{
 
