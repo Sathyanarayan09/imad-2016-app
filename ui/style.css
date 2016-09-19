@@ -1,9 +1,6 @@
 
 .panel  {
-
-
-
-	border-radius: 2px;
+ border-radius: 2px;
 	background:#7D1935;
     padding: 20px;
   max-width:900px;
@@ -22,11 +19,6 @@ body {
 }
 
 
-
-
-
-
-
 .form {
   background: #012e53;
   padding: 20px;
@@ -37,28 +29,6 @@ body {
 }
 
 
-
-h1 {
-  text-align: center;
-   color: #FFFFFF;
-  font-weight: 300;
-  margin: 0 0 40px;
-
-}
-h2 {
-  text-align:left;
-  color: #FFFFFF;
-  font-weight: 300;
-
-   font-weight: bold;
-}
-h5 {
-  text-align:left;
-  color: #ffffff;
-  font-weight: 300;
-
-   font-weight: bold;
-}
 
 h3{
   text-align: left;
