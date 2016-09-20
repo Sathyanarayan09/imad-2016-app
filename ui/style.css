@@ -108,7 +108,7 @@
   }
   .navbar {
       margin-bottom: 0;
-      background-color:#333333;
+      background-color: #333333;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -133,6 +133,20 @@
       margin-bottom: 20px;
       color: #f4511e;
   }
+  img {
+
+border-radius: 2px;
+background:#333333;
+    padding: 2px;
+	margin-right:60px;
+
+  max-width:250px;
+  margin: 20px 10px;
+
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
