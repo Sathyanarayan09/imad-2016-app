@@ -14,6 +14,14 @@ app.get('/artical-one', function(req, res)
     res.send('Artical one is serving succesfully');
 });
 
+app.get('/artical-two', function(req, res)
+{
+    res.send('Artical one is serving succesfully');
+});
+app.get('/artical-three', function(req, res)
+{
+    res.send('Artical one is serving succesfully');
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
