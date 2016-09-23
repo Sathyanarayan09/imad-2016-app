@@ -1,14 +1,14 @@
 
 
-
+var button = document.getElementById('counter');
 var counter = 0;
 
-
-
-window.onload = function () {
-    document.getElementById('counter').onclick=counter;
-      counter = counter + 1;
-    var span= document.getElementById('count');
+button.onClick =function() {
+    
+    ccounter = counter + 1;
+    var span= document.getElementById('co');
   span.innerHTML = counter.toString();
+    
+
     
 };
