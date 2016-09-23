@@ -5,6 +5,6 @@ button.onClick = function(){
     
     c=c+1;
     var span= document.getElementById("count");
-  span.setInnerHTML = c.toString();
+  span.setInnerHTML = count.toString();
     
 };
