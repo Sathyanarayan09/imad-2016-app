@@ -22,7 +22,7 @@ button.onclick =function() {
     };
     //make the request
    request.open('GET','http://sathyanarayan09.imad.hasura-app.io/counter', true);
-   reques.send(null);
+   request.send(null);
 
     
 };
