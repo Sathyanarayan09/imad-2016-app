@@ -28,11 +28,11 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/artical-two', function(req, res)
 {
-    res.send('Artical  two is serving succesfully');
+  res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
 });
 app.get('/artical-three', function(req, res)
 {
-    res.send('Artical three is serving succesfully');
+     res.sendFile(path.join(__dirname, 'ui', 'artical-three.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
