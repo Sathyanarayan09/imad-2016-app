@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var c=0;
-app.get('/comment', function(req, res){
+app.get('/artical-one', function(req, res){
     
   c=c+1;  
   res.send(c.toString());
