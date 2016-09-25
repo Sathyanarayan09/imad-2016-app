@@ -23,11 +23,9 @@ button.onclick =function() {
       }
         
     };
-    
-    counter = counter + 1;
-    var span= document.getElementById('count');
-  span.innerHTML = counter.toString();
-    
+    //make the request
+   request.open('GET','http://sathyanarayan09.imad.hasura-app.io/artical-one', true);
+   reques.send(null);
 
     
 };
