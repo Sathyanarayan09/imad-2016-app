@@ -23,7 +23,7 @@ button.onclick =function() {
         
     };
     //make the request
-   request.open('GET','http://sathyanarayan09.imad.hasura-app.io/comment', true);
+   request.open('GET','http://sathyanarayan09.imad.hasura-app.io/counter', true);
    reques.send(null);
 
     
