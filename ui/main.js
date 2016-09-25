@@ -8,11 +8,11 @@ button.onclick =function() {
     
     //capture the responce and store it in a variable
     
-    reques.onreadystatchange = function(){
+   request.onreadystatchange = function(){
       if ( request.readyState === XMLHttpRequest.Done)
       {
           
-          if(request.State === 200)
+          if(request.Status === 200)
           {
               var counter = request.responseText;
               var span = document.getElementById('count');
@@ -23,7 +23,7 @@ button.onclick =function() {
         
     };
     //make the request
-   request.open('GET','http://sathyanarayan09.imad.hasura-app.io/comment', true);
+   request.open('GET','http://sathyanarayan09.imad.hasura-app.io/counter', true);
    reques.send(null);
 
     
