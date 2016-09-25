@@ -5,11 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var c=0;
-app.get('/comment', function(req, res){
+var counter=0;
+app.get('/counter', function(req, res){
     
-  c=c+1;  
-  res.send(c.toString());
+  counter=counter+1;  
+  res.send(counter.toString());
 });
 
 app.get('/', function (req, res) {
