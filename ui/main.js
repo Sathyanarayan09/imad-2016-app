@@ -9,7 +9,7 @@ button.onclick =function() {
     //capture the responce and store it in a variable
     
     reques.onreadystatchange = function(){
-      if ( request.readyState === XMLHTTPRequest.Done)
+      if ( request.readyState === XMLHttpRequest.Done)
       {
           
           if(request.State === 200)
