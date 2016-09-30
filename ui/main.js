@@ -31,7 +31,6 @@ button.onclick =function() {
 
 
 var submit = document.getElementById('sub_button');
-
 submit.onclick = function (){
     //make a req to server and get the comments
     var request= new XMLHttpRequest();
@@ -45,13 +44,13 @@ submit.onclick = function (){
           if(request.status === 200)
           {
               
-               var name = request.responseText;
+               var names = request.responseText;
                
-               names = JSON.parse(name);
+               names = JSON.parse(names);
                var list= '';
-               for(var i=0;i<name.length;i++)
+               for(var i=0;i<names.length;i++)
                {
-                   list += '<li>' +names+ '</li>';
+                   list += '<li>' +names[i]+ '</li>';
                    
                    
                }
