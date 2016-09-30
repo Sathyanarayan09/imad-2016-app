@@ -44,7 +44,7 @@ app.get('/comments/:subcom', function(req, res)
 { //get the name from request
   var subcom = req.params.subcom;
   
-  sub_com.push(subcom);
+  subcom.push(subcom);
   //JSON
   
   req.send(JSON.stringify(subcom));
