@@ -2,19 +2,7 @@
 <html lang="en">
 <title> Artial-one </title>
 
-<script type="text/javascript">
-$(document).ready(function() {
-     $('#bb').attr('disabled','disabled');
-     $('#name').keyup(function() {
-        if($(this).val() != '') {
-           $('#bb').removeAttr('disabled');
-        }
-        else {
-        $('#bb').attr('disabled','disabled');
-        }
-     });
- });
-</script>
+
 <body>
 
     <a href='/'> Back </a>
@@ -24,8 +12,8 @@ This <button id="counter"> click me!  </button> This button has clicked <span id
 <br>
 <hr/>
 <form>
-<input type="text" id="name" placeholder="Comment" required onkeyup="toggleButton(this,'bb');"/>
-<input type="submit" value="submit" id="bb" disable="disable"> 
+<input type="text" id="name" placeholder="Comment" required onkeyup="toggleButton(this,'bttnsubmit');"/>
+<input type="submit" value="submit" id="bb" > 
 
 <ul id= "namelist">
     </ul>
