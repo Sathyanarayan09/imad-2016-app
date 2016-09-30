@@ -32,9 +32,6 @@ button.onclick =function() {
 
 var submit = document.getElementById('sub_id');
 
-
-
-
 submit.onclick = function (){
     //make a req to server and get the comments
     var request= new XMLHttpRequest();
