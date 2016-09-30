@@ -39,6 +39,16 @@ app.get('/ui/j.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
 });
 
+var sub_com=[];
+app.get('/comments/:sub_com', function(req, res)
+{ //get the name from request
+  var sub_com = req.params.sub_com;
+  
+  sub_com.push(sub_com);
+  //JSON
+  
+  req.send(JSON.stringify(sub_com));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
