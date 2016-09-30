@@ -28,13 +28,49 @@ button.onclick =function() {
 };
 
 //submit comments
-var nameInput = documeny.getElementById('comment');
-var name =  nameInput.value;
+
+
 var submit = document.getElementById('sub_id');
+
+
+
+
 submit.onclick = function (){
     //make a req to server and get the comments
-    //capture the list of names and display it
+    var request= new XMLHttpRequest();
     
+    
+    //capture the list of names and display it
+        request.onreadystatechange = function(){
+      if ( request.readyState === XMLHttpRequest.DONE)
+      {
+          
+          if(request.status === 200)
+          {
+              
+               var name = request.responseText;
+               
+               names = JSON.parse(name);
+               var list= '';
+               for(var i=0;i<name.length;i++)
+               {
+                   list += '<li>' +names+ '</li>';
+                   
+                   
+               }
+               
+               var ul = doeuments.getElementById('namlist');
+               ul.innerHTML = list;
+          }
+      }
+        
+    };
+    //make the request
+    var nameInput = documeny.getElementById('name');
+    var name =  nameInput.value;
+   request.open('GET','http://sathyanarayan09.imad.hasura-app.io/submit-name?name='+name,true);
+   request.send(null);
+
     
     
 };
