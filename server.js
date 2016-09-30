@@ -40,7 +40,7 @@ app.get('/ui/j.jpg', function (req, res) {
 });
 
 var names = [];
-app.get('/comments/:name', function(req, res)
+app.get('/submit-name/:name', function(req, res)
 { //get the name from request
   var name = req.params.name;
   
