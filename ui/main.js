@@ -26,3 +26,15 @@ button.onclick =function() {
 
     
 };
+
+//submit comments
+var nameInput = documeny.getElementById('comment');
+var name =  nameInput.value;
+var submit = document.getElementById('sub_id');
+submit.onclick = function (){
+    //make a req to server and get the comments
+    //capture the list of names and display it
+    
+    
+    
+};
