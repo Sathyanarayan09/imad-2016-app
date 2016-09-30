@@ -39,7 +39,7 @@ app.get('/ui/j.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
 });
 
-var sub_com=[];
+var subcom=[];
 app.get('/comments/:subcom', function(req, res)
 { //get the name from request
   var subcom = req.params.subcom;
