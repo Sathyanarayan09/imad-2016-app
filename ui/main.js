@@ -30,7 +30,7 @@ button.onclick =function() {
 //submit comments
 
 
-var submit = document.getElementById('sub_button');
+var submit = document.getElementById('bb');
 submit.onclick = function (){
     //make a req to server and get the comments
     var request= new XMLHttpRequest();
