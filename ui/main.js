@@ -55,7 +55,7 @@ submit.onclick = function (){
                    
                }
                
-               var ul = doeuments.getElementById('namlist');
+               var ul = doeuments.getElementById('namelist');
                ul.innerHTML = list;
           }
       }
