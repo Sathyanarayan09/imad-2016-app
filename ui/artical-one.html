@@ -4,13 +4,13 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-     $('#bttnsubmit').attr('disabled','disabled');
-     $('#subEmail').keyup(function() {
+     $('#bb').attr('disabled','disabled');
+     $('#name').keyup(function() {
         if($(this).val() != '') {
-           $('#bttnsubmit').removeAttr('disabled');
+           $('#bb').removeAttr('disabled');
         }
         else {
-        $('#bttnsubmit').attr('disabled','disabled');
+        $('#bb').attr('disabled','disabled');
         }
      });
  });
