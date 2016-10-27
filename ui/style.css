@@ -124,6 +124,8 @@ background:#333333;
     }
   }
   
+  
+  
   #tri-d-wrapper {
 -webkit-perspective: 300px;
 perspective: 300px;
@@ -134,7 +136,7 @@ width: 100%;
 
 #img-wrapper {
 width: 350px;
-background: #3498db;
+
 margin: 0;
 position: absolute;
 cursor: pointer;
