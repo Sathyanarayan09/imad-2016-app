@@ -247,19 +247,6 @@ padding-right: 20px;
 font-weight: 300;
 }
 
-figcaption .bottom-detail {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 70px;
-background: white;
--webkit-transform: translateY(100%);
--ms-transform: translateY(100%);
-transform: translateY(100%);
--webkit-transition: .3s all ease .1s;
-transition: .3s all ease .1s;
-}
-
 
 
 
