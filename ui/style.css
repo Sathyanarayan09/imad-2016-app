@@ -47,11 +47,10 @@ background:#333333;
       padding: 60px 50px;
   }
   
- .bg-grey {
-  background: linear-gradient(180deg, rgb(40, 128, 207), rgb(38, 162, 72));
-  background: -webkit-linear-gradient(180deg, rgb(40, 128, 207), rgb(38, 162, 72));
-}
-
+  
+  .bg-grey {
+      background-color: #26A248;
+  }
   .logo-small {
       color: #f4511e;
       font-size: 50px;
