@@ -134,7 +134,24 @@ height: 100%;
 width: 100%;
 }
 
+#img-wrapper {
+width: 350px;
 
+margin: 0;
+position: absolute;
+cursor: pointer;
+border-radius: 3px;
+overflow: hidden;
+top: 50%;
+left: 50%;
+margin-left: -175px;
+margin-top: -131px;
+-webkit-transform: rotateX(30deg) scale(.65);
+transform: rotateX(30deg) scale(.65);
+-webkit-transition: .3s all ease;
+transition: .3s all ease;
+
+}
 
 #img-wrapper:hover {
 -webkit-transform: rotateX(0deg) scale(1);
