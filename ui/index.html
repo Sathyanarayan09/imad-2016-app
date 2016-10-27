@@ -47,10 +47,9 @@ balapaCop("3D Hover Interaction", "rgba(255,255,255,.5)");
   <div class="row">
     <div class="col-sm-8">
   <div class="container">
-  <h1>Profile CSS Hover Effect</h1>
-  <h2>HTML + CSS ONLY</h2>
+
   <div class="service-details">
-    <img src="http://i.imgur.com/SkFZNy4.jpg" alt="realm">
+    <img src="ui/j.jpg"  alt="realm">
     <div class="service-hover-text">
       <h3>Jane Doe</h3>
       <h4>Developer</h4>
@@ -64,7 +63,7 @@ balapaCop("3D Hover Interaction", "rgba(255,255,255,.5)");
 </div>
     </div>
 <div>
-     <img src="ui/j.jpg" class="responsive" align="right"></div>
+  
 
 
   
@@ -89,12 +88,7 @@ balapaCop("3D Hover Interaction", "rgba(255,255,255,.5)");
             <h2 class="title">Hover Design Interaction</h2>
             <div class="bottom-detail">
                 <p>Some little detail here, things about the designs summary lorem anything related just to make this look long text.</p>
-                <ul class="social-icons">
-                    <li><a class="fa fa-facebook" href="#"></a></li>
-                    <li><a class="fa fa-dribbble" href="#"></a></li>
-                    <li><a class="fa fa-twitter" href="#"></a></li>
-                    <li><a class="fa fa-behance" href="#"></a></li>
-                </ul>
+            
             </div>
         </figcaption>
     </figure>
@@ -151,10 +145,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -170,7 +162,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
@@ -182,4 +173,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
