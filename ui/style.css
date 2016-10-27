@@ -67,10 +67,18 @@ background:#333333;
       margin-bottom: 10px;
   }
 
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
 
 
 
-
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
 
 
 
