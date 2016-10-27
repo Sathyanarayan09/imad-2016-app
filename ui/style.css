@@ -204,22 +204,6 @@ transform: scale(1);
 transition: .3s all ease .5s;
 }
 
-#img-wrapper:hover figcaption .bottom-detail .social-icons li a.fa-twitter {
-color: #50ABF1;
--webkit-transition: .3s all ease .7s;
-transition: .3s all ease .7s;
-}
-
-#img-wrapper:hover figcaption .bottom-detail .social-icons li a.fa-facebook {
-color: #3B599A;
-}
-
-#img-wrapper:hover figcaption .bottom-detail .social-icons li a.fa-dribbble {
-color: #EC4989;
--webkit-transition: .3s all ease .6s;
-transition: .3s all ease .6s;
-}
-
 
 
 figcaption {
@@ -258,7 +242,7 @@ transition: .3s all ease .1s;
 
 
 
-
+/*profile*/
 
 
 .service-details {
