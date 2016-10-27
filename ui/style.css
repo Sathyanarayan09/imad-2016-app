@@ -1,7 +1,7 @@
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
-      color: #ffffff;
+      color: #818181;
   }
 img {
 
@@ -38,7 +38,7 @@ background:#333333;
       margin-bottom: 30px;
   }
   .jumbotron {
-      background-color: #f4511e;
+      background-color: #ffffff;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
