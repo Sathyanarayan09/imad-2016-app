@@ -46,9 +46,12 @@ background:#333333;
   .container-fluid {
       padding: 60px 50px;
   }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
+  
+ .bg-grey {
+  background: linear-gradient(180deg, rgb(40, 128, 207), rgb(38, 162, 72));
+  background: -webkit-linear-gradient(180deg, rgb(40, 128, 207), rgb(38, 162, 72));
+}
+
   .logo-small {
       color: #f4511e;
       font-size: 50px;
