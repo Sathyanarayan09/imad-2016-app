@@ -115,7 +115,15 @@ background:#FFFFFF;
   }
 
 
-
+  .paraalign
+  {
+	  font-size: 21px;
+	  text-align: justify;
+    text-justify: inter-word;
+font-family: 'Audiowide', cursive;
+font-family: 'Overlock', cursive;
+      color: #303030;
+  }
 
 
 /* 3d text */
