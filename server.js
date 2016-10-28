@@ -50,7 +50,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/j.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'image.jpg'));
 });
 
 
