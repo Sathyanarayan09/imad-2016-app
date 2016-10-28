@@ -128,7 +128,7 @@ font-family: 'Overlock', cursive;
 .enjoy-css {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
+
   cursor: pointer;
   border: none;
   font: normal 72px/normal "Passero One", Helvetica, sans-serif;
@@ -168,7 +168,7 @@ font-family: 'Overlock', cursive;
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+
   position: absolute;
   bottom: 8px;
   width: 100%;
