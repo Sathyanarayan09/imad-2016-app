@@ -15,7 +15,13 @@ background:#FFFFFF;
   border-radius: 60px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
+  p {
+      font-size: 20px;
+    
+      color: #303030;
+   
 
+  }
 
   h2 {
       font-size: 24px;
@@ -106,17 +112,6 @@ background:#FFFFFF;
       animation-duration: 1s;
       
       visibility: visible;
-  }
-
-
-  p
-  {
-	  font-size: 25px;
-	  text-align: justify;
-    text-justify: inter-word;
-   font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
-      color: #303030;
   }
 
 
