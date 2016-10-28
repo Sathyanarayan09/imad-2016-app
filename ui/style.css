@@ -1,4 +1,4 @@
-body {
+ body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
@@ -128,7 +128,7 @@ font-family: 'Overlock', cursive;
 .enjoy-css {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-
+  box-sizing: content-box;
   cursor: pointer;
   border: none;
   font: normal 72px/normal "Passero One", Helvetica, sans-serif;
@@ -168,7 +168,7 @@ font-family: 'Overlock', cursive;
 .text {
   color: #f2f2f2;
   font-size: 15px;
-
+  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -182,4 +182,42 @@ font-family: 'Overlock', cursive;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
