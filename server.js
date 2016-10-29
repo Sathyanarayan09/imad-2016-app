@@ -15,16 +15,12 @@ app.get('/', function (req, res) {
 
 
 
-app.get('/ui/artical-one', function(req, res)
+
+
+
+app.get('/ui/blog', function(req, res)
 {
-   res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
-});
-
-
-
-app.get('/artical-two', function(req, res)
-{
-  res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
