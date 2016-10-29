@@ -34,9 +34,6 @@ app.get('/artical-one', function(req, res)
 {
    res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
 
 
 
