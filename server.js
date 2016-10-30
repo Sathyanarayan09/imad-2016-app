@@ -31,16 +31,6 @@ app.get('/ui/image.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'image.jpg'));
 });
 
-app.get('/ui/fb.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb.jpg'));
-});
-app.get('/ui/t.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 't.jpg'));
-});
-
-app.get('/ui/l.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'l.jpg'));
-});
 
 app.get('/ui/j.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
