@@ -3,7 +3,7 @@
       line-height: 1.8;
       color: #818181;
   }
-img {
+.responsive {
 
 
 background:#333333;
@@ -132,7 +132,7 @@ font-family: 'Overlock', cursive;
   cursor: pointer;
   border: none;
   font: normal 72px/normal "Passero One", Helvetica, sans-serif;
-  color: #000000;
+  color: #FF9933;
   text-align: center;
   -o-text-overflow: clip;
   text-overflow: clip;
@@ -221,9 +221,5 @@ font-family: 'Overlock', cursive;
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
-
-
-/* blog*/
-
+/*icon*/
 
