@@ -50,14 +50,15 @@
       <br>
     </div>
 <div>
-     <img src="image.jpg" class="responsive" align="right"></div>
+     <img src="ui/image.jpg" class="responsive" align="right"></div>
 
 
   
   </div>
 
 </div>
- 
+
+
 
 <!-- Container (Services Section) -->
 <div id="hobbies" class="container-fluid text-center">
@@ -97,43 +98,17 @@
       <p><span class="glyphicon glyphicon-map-marker"></span> Chennai, TamilNadu</p>
 
       <p><span class="glyphicon glyphicon-envelope"></span> sathyanarayan065@gmail.com</p>
-	  
     </div>
 
   </div>
   
  
-  <input type="text" class="form-control" id="usr" placeholder="Your Name" required>
+ 
+  <textarea class="form-control" rows="5" id="comt" placeholder="Comment" required></textarea>
   <br>
-  <input type="email" class="form-control" id="email" placeholder="Your Email" onblur="validateEmail(this);"  required>
-  <br>
-  <textarea class="form-control" rows="5" id="comt" placeholder="Message" required></textarea>
-  <br>
-  <input id="sub"  class="btn btn-primary" type="button" onclick="clearFields()" value="Submit"/> 
-<script type="text/javascript">
-function clearFields() {
-    document.getElementById("usr").value=""
-    document.getElementById("email").value=""
-	document.getElementById("comt").value=""
-	if(document.getElementById("usr").value == '' && document.getElementById("email").value == '' && document.getElementById("comt").value == '')
-	{
-	 alert("Thank you! ");
-	}
-}
-</script>
-<hr>
-<br>
-<a href="https://www.facebook.com/sathyanarayan009">
-  <img src="fb.png" alt="facebook" align="right" width="50" height="50">
-</a>
-<a href="https://twitter.com/SathyanCeaser09">
-  <img src="t.png" alt="twitter" align="right"  width="50" height="50">
-</a>
-<a href="https://www.linkedin.com/in/sathya-narayan-802867107?trk=nav_responsive_tab_profile">
-  <img src="l.png" alt="linkedin" align="right"  width="50" height="50">
-</a>
-<h5> &copy; Sathyanarayan09 | 2016 </h5>
- </div>
+  <input type="submit" id="sub" value="submit" class="btn btn-primary"/> 
+
+</div>
 
 
 
