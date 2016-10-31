@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
 
- pool.query('SELECT * FROM articals', function(err, result.rows) {
+ pool.query('SELECT * FROM articals', function(err, result) {
      
      
      
@@ -41,7 +41,7 @@ app.get('/test-db', function (req, res) {
      else
      {
          
-         res.send(JSON.stringify(result));
+         res.send(JSON.stringify(result.rows));
      }
 }); 
 
