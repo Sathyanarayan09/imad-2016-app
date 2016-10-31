@@ -82,7 +82,14 @@ font-family: 'Overlock', cursive;
       background-color: #f4511e;
   }
 
+  .con
+  {
+      font-size: 15px;
+ 
+      color: #303030;
+   
 
+  }
 
   .panel:hover {
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
