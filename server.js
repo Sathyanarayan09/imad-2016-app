@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
 
- pool.query('SELECT * FROM articals', function(err, result) {
+ pool.query('SELECT * FROM articals', function(err, result.rows) {
      
      
      
