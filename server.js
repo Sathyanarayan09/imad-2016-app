@@ -11,7 +11,7 @@ var config = {
   user: 'sathyanarayan09',
   password: process.env.DB_PASSWORD,
   port: '5432',
-  database: 'articals'
+  database: 'sathyanarayan09'
 };
 
 
@@ -35,7 +35,7 @@ app.get('/test-db', function (req, res) {
      else
      {
          
-         res.send(JSON.stringify(result));
+         res.send(JSON.stringify(result.row));
      }
 }); 
 
