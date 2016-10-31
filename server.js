@@ -47,6 +47,43 @@ app.get('/test-db', function (req, res) {
 
 });
 
+app.get('/atricals/articalname:', function(req, res)
+{
+ 
+ 
+ 
+pool.query("SELECT * FROM articals where title ="+ req.params.articalname,function(err, result) {
+      
+     
+     
+     
+     if(err)
+     {
+         
+         res.status(500).send(err.toString());
+     }
+     
+     else
+     {
+         
+        if(result.rows.length===0)
+        {
+            res.status(404).send('Artical not found');
+            
+        }
+        else{
+            
+            var articaldate = result.rown[0];
+            res.send(createTemplate(articaldate))
+        }
+     }
+}); 
+ 
+ 
+ 
+ 
+ 
+});
 
 
 
