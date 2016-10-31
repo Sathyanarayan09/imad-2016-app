@@ -113,23 +113,26 @@
 
   </div>
   
- 
+ <form>
   <input type="text" class="form-control" id="usr" placeholder="Your Name" required>
   <br>
   <input type="email" class="form-control" id="email" placeholder="Your Email" onblur="validateEmail(this);"  required>
   <br>
   <textarea class="form-control" rows="5" id="comt" placeholder="Message" required></textarea>
   <br>
-  <input id="sub" class="btn btn-primary" type="button" onclick="clearFields()" value="Submit"/> 
+  <input id="sub" class="btn btn-primary" type="submit" onclick="clearFields()" value="Submit"/> 
+  </form>
 <script type="text/javascript">
 function clearFields() {
-    document.getElementById("usr").value=""
+if(document.getElementById("usr").value != '' && document.getElementById("email").value != '' && document.getElementById("comt").value != '')
+   { document.getElementById("usr").value=""
     document.getElementById("email").value=""
 	document.getElementById("comt").value=""
 	if(document.getElementById("usr").value == '' && document.getElementById("email").value == '' && document.getElementById("comt").value == '')
 	{
-	 alert("Thank you! ");
-	}
+	 alert("Thank you!");
+	}}
+	
 }
 </script>
 <hr>
