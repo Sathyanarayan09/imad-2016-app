@@ -120,17 +120,18 @@
   <br>
   <textarea class="form-control" rows="5" id="comt" placeholder="Message" required></textarea>
   <br>
-  <input id="sub" class="btn btn-primary" type="submit" onclick="clearFields()" value="Submit"/> 
+  <input id="sub" class="btn btn-primary" type="submit" onclick="clearFields('usr')" value="Submit"/> 
   </form>
 <script type="text/javascript">
-function clearFields() {
+function clearFields(Input_Id) {
+    var My_Message = document.getElementById(Input_Id).value;
 if(document.getElementById("usr").value != '' && document.getElementById("email").value != '' && document.getElementById("comt").value != '')
    { document.getElementById("usr").value=""
     document.getElementById("email").value=""
 	document.getElementById("comt").value=""
 	if(document.getElementById("usr").value == '' && document.getElementById("email").value == '' && document.getElementById("comt").value == '')
 	{
-	 alert("Thank you!");
+	alert('Thank You!, ' + My_Message);
 	}}
 	
 }
