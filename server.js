@@ -7,11 +7,14 @@ app.use(morgan('combined'));
 
 var Pool = require('pg').Pool;
 var config = {
-  host: 'db.imad.hasura-app.io',
-  user: 'sathyanarayan09',
-  password: process.env.DB_PASSWORD,
-  port: '5432',
-  database: 'sathyanarayan09'
+    user: 'sathyanarayan09',
+    database: 'sathyanarayan09',
+    host: 'db.imad.hasura-app.io',
+    port: '5432',
+  
+  password: process.env.DB_PASSWORD
+ 
+  
 };
 
 
@@ -19,7 +22,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var pool = new Pool(config)
+
+
+
+var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
 
  pool.query('SELECT * FROM articals', function(err, result) {
