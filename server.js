@@ -94,6 +94,8 @@ app.get('/ui/blog.html', function(req, res)
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
 });
 
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -122,6 +124,12 @@ app.get('/ui/four.jpg', function (req, res) {
 app.get('/ui/three.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'three.jpg'));
 });
+
+app.get('/ui/bg.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bg.jpg'));
+});
+
+
 app.get('/ui/two.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'two.jpg'));
 });
