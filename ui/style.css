@@ -80,7 +80,7 @@ font-family: 'Overlock', cursive;
   
   .bg-grey {
        background-image: url('ui/bg.jpg');
-      
+      background-color: #f6f6f6;
   }
   .logo-small {
       color: #f4511e;
