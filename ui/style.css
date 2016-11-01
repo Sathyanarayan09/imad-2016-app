@@ -9,10 +9,10 @@
 background:#333333;
 
 
-
+float: right; margin: 0px 0px 15px 15px;
 	
   max-width:250px;
-
+  margin: 30px 30px;
   border-radius: 60px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
@@ -27,14 +27,22 @@ background:#333333;
 	  
 	   background-image: url('ui/bg.jpg');
 
-      background-attachment: fixed;
+    background-attachment: fixed;
+	
+
+  }
+    .top2{
+	  
+	   background-image: url('bg2.jpg');
+
+    background-attachment: fixed;
 	
 
   }
   .paraalign
   {
 	  font-size: 21px;
-
+	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
 font-family: 'Audiowide', cursive;
@@ -66,7 +74,7 @@ font-family: 'Overlock', cursive;
   .container-fluid {
       padding: 60px 50px;
 	   background-color: #ffffff;
-	   
+	   align:center;
   }
   
   
@@ -140,13 +148,17 @@ font-family: 'Overlock', cursive;
    
 
   }
+  .textwarp
+  {
+	  
+  }
 
 /* 3d text */
 
 .enjoy-css {
-
-
-
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   cursor: pointer;
   border: none;
   font: normal 72px/normal "Passero One", Helvetica, sans-serif;
@@ -186,7 +198,7 @@ font-family: 'Overlock', cursive;
 .text {
   color: #f2f2f2;
   font-size: 15px;
-
+  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -219,7 +231,8 @@ font-family: 'Overlock', cursive;
 
 /* Fading animation */
 .fade {
-
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
