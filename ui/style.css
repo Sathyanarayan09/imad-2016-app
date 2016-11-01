@@ -1,4 +1,4 @@
-body {
+ body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
@@ -8,8 +8,9 @@ body {
 
 background:#333333;
 
-	margin-right:60px;
 
+float: right; margin: 0px 0px 15px 15px;
+	
   max-width:250px;
   margin: 30px 30px;
   border-radius: 60px;
@@ -22,9 +23,18 @@ background:#333333;
    
 
   }
+  .top{
+	  
+	   background-image: url('bg.jpg');
+
+    background-attachment: fixed;
+	
+
+  }
   .paraalign
   {
 	  font-size: 21px;
+	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
 font-family: 'Audiowide', cursive;
@@ -38,6 +48,13 @@ font-family: 'Overlock', cursive;
       font-weight: 600;
       margin-bottom: 30px;
   }
+    h1{
+    
+   
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
   h4 {
       font-size: 19px;
       line-height: 1.375em;
@@ -45,15 +62,11 @@ font-family: 'Overlock', cursive;
       font-weight: 400;
       margin-bottom: 30px;
   }
-  .jumbotron {
-      background-color: #f4511e;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-  }
+
   .container-fluid {
       padding: 60px 50px;
-       background-color: #ffffff;
+	   background-color: #ffffff;
+	   align:center;
   }
   
   
@@ -70,37 +83,26 @@ font-family: 'Overlock', cursive;
       border: none;
       border-radius: 0;
   }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
 
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
 
-  .con
-  {
-      font-size: 15px;
- 
-      color: #303030;
-   
 
-  }
+
 
   .panel:hover {
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
-
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
 
 
   .navbar {
       margin-bottom: 0;
-      background-color: #000000;
+      background-color: #f4511e;
       z-index: 9999;
       border: 0;
       font-size: 12px;
@@ -117,8 +119,8 @@ font-family: 'Overlock', cursive;
       background-color: #fff;
   }
   .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff;
+    
+      color: #f4511e;
   }
 
   .slideanim {visibility:hidden;}
@@ -130,6 +132,18 @@ font-family: 'Overlock', cursive;
       visibility: visible;
   }
 
+  .con
+  {
+      font-size: 15px;
+ 
+      color: #303030;
+   
+
+  }
+  .textwarp
+  {
+	  
+  }
 
 /* 3d text */
 
@@ -229,7 +243,5 @@ font-family: 'Overlock', cursive;
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+/*icon*/
 
-
-
-/* blog*/
