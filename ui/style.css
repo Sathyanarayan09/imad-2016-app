@@ -24,9 +24,10 @@ float: right; margin: 0px 0px 15px 15px;
 
   }
   .top{
-	 
+	  
+	   background-image: url('ui/bg.jpg');
 
-    
+    background-attachment: fixed;
 	
 
   }
@@ -71,10 +72,9 @@ font-family: 'Overlock', cursive;
   }
 
   .container-fluid {
-
+      padding: 60px 50px;
+	   background-color: #ffffff;
 	   align:center;
-	    background-attachment: fixed;
-	   background-image: url('ui/bg.jpg');
   }
   
   
