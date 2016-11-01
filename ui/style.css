@@ -25,7 +25,7 @@ float: right; margin: 0px 0px 15px 15px;
   }
   .top{
 	  
-	   background-image: url('ui/bg.jpg');
+	  
 
     background-attachment: fixed;
 	
@@ -79,7 +79,8 @@ font-family: 'Overlock', cursive;
   
   
   .bg-grey {
-      background-color: #f6f6f6;
+       background-image: url('ui/bg.jpg');
+      
   }
   .logo-small {
       color: #f4511e;
