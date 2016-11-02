@@ -1,26 +1,24 @@
- body {
-      font: 400 15px Lato, sans-serif;
+body {
+      	font-family: 'Share Tech Mono', monospace;
       line-height: 1.8;
       color: #818181;
   }
 .responsive {
 
-
-background:#333333;
-
-
-float: right; margin: 0px 0px 15px 15px;
 	
   max-width:250px;
   margin: 30px 30px;
   border-radius: 60px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
+
+.responsive.img-center {
+  margin: 0 auto;
+}
   p {
-      font-size: 20px;
- font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
-      color: #303030;
+      font-size: 25px;
+	font-family: 'Share Tech Mono', monospace;
+      color: #ffffff;
    
 
   }
@@ -30,9 +28,15 @@ font-family: 'Overlock', cursive;
   {
        font-size: 15px;
      color: #303030;
-	 font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
-   
+	font-family: 'Share Tech Mono', monospace;
+      
+  }
+  
+    .ttl1
+  {
+       font-size: 30px;
+     color: #ffffff;
+	font-family: 'Share Tech Mono', monospace;
       
   }
     .sub
@@ -42,31 +46,67 @@ font-family: 'Overlock', cursive;
    
       
   }
-  .top{
-	  
-	   background-image: url('/ui/bg.jpg');
 
-    background-attachment: fixed;
+  .intro1
+  {
+	    font-size: 25px;
+
+ 
+  top: -100px;
+      color: #ffffff;
+	font-family: 'Share Tech Mono', monospace;
+	  
+  }
+.red{
+	  color: #f4511e;
+	   font-size: 25px;
+
+
+     
+     
+	font-family: 'Share Tech Mono', monospace;
 	
+}
+    .intro2
+  {  text-decoration:  overline ;
+	    font-size: 35px;
+ border-bottom: solid 3px #ffffff;
+      display: inline;
+      padding-bottom: 1px;
+ 
+
+      color: #ffffff;
+	  font-family: 'Source Code Pro', monospace;
+	  
+  }
+   
+    .first{
+	  
+	   background-image: url('/ui/first.jpg');
+  background-size:     cover;  
+ padding-top: 25px; 
+ background-attachment: fixed;
+    background-position:  center;  
 
   }
-    .top2{
+      .second{
 	  
-	   background-image: url('bg2.jpg');
-
+	   background-image: url('/ui/coff.jpg');
+  background-size:     cover;  
+ padding-top: 25px; 
     background-attachment: fixed;
-	
+    background-position:  center;  
 
   }
+    
   .paraalign
   {
 	  font-size: 21px;
 	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
-font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
-      color: #303030;
+	font-family: 'Share Tech Mono', monospace;
+      color: #ffffff;
   }
     .para
   {
@@ -74,8 +114,7 @@ font-family: 'Overlock', cursive;
 	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
-font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
+	font-family: 'Share Tech Mono', monospace;
       color: #303030;
   }
   
@@ -85,41 +124,46 @@ font-family: 'Overlock', cursive;
 	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
-font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
+	font-family: 'Share Tech Mono', monospace;
       color: #f4511e;
   }
   h2 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #303030;
+        color: #000000;
       font-weight: 600;
-	  font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
+	 	font-family: 'Share Tech Mono', monospace;
       margin-bottom: 30px;
   }
     h1{
     
    
-      color: #303030;
+      color: #000000;
       font-weight: 600;
-	  font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
+	font-family: 'Share Tech Mono', monospace;
       margin-bottom: 30px;
   }
   h4 {
-      font-size: 19px;
+      font-size: 25px;
       line-height: 1.375em;
-      color: #303030;
-	  font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
+      color: #ffffff;
+		font-family: 'Share Tech Mono', monospace;
       font-weight: 400;
       margin-bottom: 30px;
+  }
+    h3 {
+      font-size: 21px;
+	  align:center;
+	  text-align: justify;
+    text-justify: inter-word;
+     	font-family: 'Share Tech Mono', monospace;
+      color: #ffffff;
+	   text-decoration: overline;
   }
 
   .container-fluid {
       padding: 60px 50px;
-	   background-color: #ffffff;
+	
 	   align:center;
   }
   
@@ -128,6 +172,7 @@ font-family: 'Overlock', cursive;
   .logo-small {
       color: #f4511e;
       font-size: 50px;
+	  	font-family: 'Share Tech Mono', monospace;
   }
 
   .thumbnail {
@@ -196,33 +241,6 @@ font-family: 'Overlock', cursive;
 
 /* 3d text */
 
-.enjoy-css {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  cursor: pointer;
-  border: none;
-  font: normal 72px/normal "Passero One", Helvetica, sans-serif;
-  color: #000000;
-  text-align: center;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;
-  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-.enjoy-css:hover {
-  color: #ffffff;
-  text-shadow: 0 1px 0 rgba(255,255,255,1) , 0 2px 0 rgba(255,255,255,1) , 0 3px 0 rgba(255,255,255,1) , 0 4px 0 rgba(255,255,255,1) , 0 5px 0 rgba(255,255,255,1) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 -5px 10px rgba(0,0,0,0.247059) , 0 -7px 10px rgba(0,0,0,0.2) , 0 -15px 20px rgba(0,0,0,0.14902) ;
-  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  
-  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-}
 
 
 
@@ -244,8 +262,7 @@ font-family: 'Overlock', cursive;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  font-family: 'Audiowide', cursive;
-font-family: 'Overlock', cursive;
+	font-family: 'Share Tech Mono', monospace;
   text-align: center;
 }
 
@@ -294,5 +311,24 @@ font-family: 'Overlock', cursive;
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+.progress {
+    position: relative;
+	height: 25px;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 3px 30px 2px 10px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
 }
 /*icon*/
