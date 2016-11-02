@@ -47,7 +47,7 @@ app.get('/test-db', function (req, res) {
 
 });
 
-app.get('/articals/articalname:', function(req, res)
+app.get('/articals/:articalname', function(req, res)
 {
  
  
