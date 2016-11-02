@@ -82,7 +82,7 @@ body {
    
     .first{
 	  
-	   background-image: url('ui/first.jpg');
+	   background-image: url('/ui/first.jpg');
   background-size:     cover;  
  padding-top: 25px; 
  background-attachment: fixed;
@@ -91,7 +91,7 @@ body {
   }
       .second{
 	  
-	   background-image: url('ui/coff.jpg');
+	   background-image: url('/ui/coff.jpg');
   background-size:     cover;  
  padding-top: 25px; 
     background-attachment: fixed;
