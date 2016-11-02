@@ -115,6 +115,16 @@ app.get('/ui/l.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'l.png'));
 });
 
+
+app.get('/ui/first.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'first.jpg'));
+});
+
+
+app.get('/ui/coff.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'coff.jpg'));
+});
+
 app.get('/ui/j.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
 });
