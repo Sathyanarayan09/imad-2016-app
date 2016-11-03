@@ -113,7 +113,7 @@ font-family: 'Libre Baskerville', serif;
   
         .third{
 	  
-	   background-image: url('th.jpg');
+	   background-image: url('/ui/th.jpg');
   background-size:     cover;  
  padding-top: 25px; 
     background-attachment: fixed;
