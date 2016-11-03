@@ -1,4 +1,4 @@
-body {
+ body {
       	font-family: 'Share Tech Mono', monospace;
       line-height: 1.8;
       color: #818181;
@@ -27,8 +27,8 @@ body {
   .ttl
   {
        font-size: 15px;
-     color: #303030;
-	font-family: 'Share Tech Mono', monospace;
+     color: #000000;
+font-family: 'Libre Baskerville', serif;
       
   }
   
@@ -67,6 +67,18 @@ body {
 	font-family: 'Share Tech Mono', monospace;
 	
 }
+
+
+.level
+{
+	 color: #f4511e;
+	   font-size: 25px;
+
+
+     
+     
+	font-family: 'Share Tech Mono', monospace;
+}
     .intro2
   {  text-decoration:  overline ;
 	    font-size: 35px;
@@ -98,15 +110,32 @@ body {
     background-position:  center;  
 
   }
-    
+  
+        .third{
+	  
+	   background-image: url('th.jpg');
+  background-size:     cover;  
+ padding-top: 25px; 
+    background-attachment: fixed;
+    background-position:  center;  
+
+  }
+    .top2{
+	  
+	   background-image: url('/ui/bg2.jpg');
+
+    background-attachment: fixed;
+	
+
+  }
   .paraalign
   {
 	  font-size: 21px;
 	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
-	font-family: 'Share Tech Mono', monospace;
-      color: #ffffff;
+font-family: 'Libre Baskerville', serif;
+      color: #000000;
   }
     .para
   {
@@ -114,10 +143,11 @@ body {
 	  align:center;
 	  text-align: justify;
     text-justify: inter-word;
-	font-family: 'Share Tech Mono', monospace;
+font-family: 'Libre Baskerville', serif;
       color: #303030;
   }
   
+  .vertical_line{height:150px; width:1px;background:#ffffff;}
   .typewrite
   {
 	    font-size: 35px;
