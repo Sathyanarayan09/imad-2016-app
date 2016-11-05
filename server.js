@@ -5,6 +5,7 @@ var crypto = require('crypto');
 var app = express();
 var bodyParser = require('body-parser');
 var Pool = require('pg').Pool;
+app.use(bodyParser.json());
 var config = {
     user: 'sathyanarayan09',
     database: 'sathyanarayan09',
@@ -20,7 +21,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-app.use(bodyParser.json());
+
 app.use(morgan('combined'));
 
 
