@@ -16,10 +16,6 @@ var config = {
  
   
 };
-var crypto = require('crypto');
-
-var bodyParser = require('body-parser');
-app.use(bodyParser.json());
 
 
 
@@ -156,8 +152,6 @@ app.get('/ui/one.jpg', function (req, res) {
 app.get('/ui/th.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'th.jpg'));
 });
-
-
 
 
 
