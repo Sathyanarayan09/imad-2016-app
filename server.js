@@ -165,43 +165,6 @@ app.get('/ui/th.jpg', function (req, res) {
 });
 
 
-function hash(input, salt){
-    var hashed = crypto.pbkdf2Sync(input, 'salt', 100000, 512, 'sha512');
-    return ["pbkdf2","100000",salt,hashed.toString('hex')].join('$');
-}
-
-
-app.get('/hash/:input', function (req, res) {
-
-var hashedString = hash(req.params.input, 'thisisrandomstring');
-res.send(hashedString);
-
-});
-
-
-app.post('/create-user', function (req, res) {
-    
-    var username = req.body.username;
-    var password = req.body.password;
-    var salt = crypto.randomBytes(128).toString('hex');
-    var dbString = hash(password, salt);
-    pool.query('INSERT INTO "user" (username,password) VALUES ($1,$2)',[username , dbString], function(err, result)
-{
-    if(err)
-    {
-        res.status(500).send(err.toString());
-        
-    }
-    else{
-        
-        res.send('User Successfully created:' + username);
-    }
-    
-    
-});
-});   
-
-
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
