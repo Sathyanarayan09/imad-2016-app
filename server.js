@@ -165,7 +165,7 @@ function hash(input, salt){
 
 app.get('/hash/:input', function (req, res) {
 
-var hashedString = has(req.params.input, 'thisisrandomstring');
+var hashedString = hash(req.params.input, 'thisisrandomstring');
 res.send(hashedString);
 
 });
