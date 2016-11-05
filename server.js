@@ -77,7 +77,7 @@ pool.query("SELECT * FROM articals where title = '"+ req.params.articalname+"'",
         else{
             
             var articalDate = result.rows[0];
-            res.send(createTemplate(articalDate))
+            res.send(createTemplate(articalDate));
         }
      }
 }); 
