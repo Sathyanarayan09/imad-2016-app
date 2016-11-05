@@ -17,6 +17,8 @@ var config = {
   
 };
 
+var crypto = reques('crypto');
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -153,6 +155,27 @@ app.get('/ui/th.jpg', function (req, res) {
 });
 
 
+
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+request.open('GET','http://sathyanarayan09.imad.hasura-app.io/submit-name?name='+name,true);
+reques.send(null);
+
+
+/*login codes*/
+
+function hash(input, salt){
+    var hashed = crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
+    return hashed.toString('hex');
+}
+
+
+app.get('hash/login', function (req, res) {
+
+var hashedString = has(req.params.input, 'thisisrandomstring');
+res.send(hashedString);
+
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
