@@ -97,7 +97,7 @@ font-family: 'Libre Baskerville', serif;
 	   background-image: url('/ui/first.jpg');
   background-size:     cover;  
  padding-top: 25px; 
-
+ background-attachment: fixed;
     background-position:  center;  
 
   }
@@ -106,7 +106,7 @@ font-family: 'Libre Baskerville', serif;
 	   background-image: url('/ui/coff.jpg');
   background-size:     cover;  
  padding-top: 25px; 
-
+    background-attachment: fixed;
     background-position:  center;  
 
   }
@@ -116,18 +116,11 @@ font-family: 'Libre Baskerville', serif;
 	   background-image: url('/ui/th.jpg');
   background-size:     cover;  
  padding-top: 25px; 
-
+    background-attachment: fixed;
     background-position:  center;  
 
   }
-    .top2{
-	  
-	   background-image: url('/ui/bg2.jpg');
-
-    background-attachment: fixed;
-	
-
-  }
+ 
   .paraalign
   {
 	  font-size: 21px;
