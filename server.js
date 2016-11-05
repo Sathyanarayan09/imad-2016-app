@@ -16,10 +16,6 @@ var config = {
  
   
 };
-var crypto = require('crypto');
-
-var bodyParser = require('body-parser');
-app.use(bodyParser.json());
 
 
 
@@ -81,7 +77,7 @@ pool.query("SELECT * FROM articals where title = '"+ req.params.articalname+"'",
         else{
             
             var articalDate = result.rows[0];
-            res.send(createTemplate(articalDate))
+            res.send(createTemplate(articalDate));
         }
      }
 }); 
@@ -159,47 +155,6 @@ app.get('/ui/th.jpg', function (req, res) {
 
 
 
-
-
-
-function hash(input, salt){
-    var hashed = crypto.pbkdf2Sync(input, 'salt', 100000, 512, 'sha512');
-    return hashed.toString('hex');
-}
-
-
-app.get('/hash/:input', function (req, res) {
-
-var hashedString = hash(req.params.input, 'thisisrandomstring');
-res.send(hashedString);
-
-});
-
-
-app.post('/create-user', function (req, res) {
-    
-    var username = req.body.username;
-    var password = req.body.password;
-    var salt = crypto.randomBytes(128).toString('hex');
-    var dbString = hash(password, salt);
-    pool.query('INSERT INTO "users" (username,password) VALUES ($1,$2)',[username , dbString], function(err, result)
-{
-    if(err)
-    {
-        res.status(500).send(err.toString());
-        
-    }
-    else{
-        
-        res.send('User Successfully created:' + username);
-    }
-    
-    
-});
-});    
-
-var dbString = has(password, salt);
-});
 
 
 
