@@ -156,10 +156,7 @@ app.get('/ui/th.jpg', function (req, res) {
 
 
 
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
-request.open('GET','http://sathyanarayan09.imad.hasura-app.io/submit-name?name='+name,true);
-reques.send(null);
+
 
 
 /*login codes*/
