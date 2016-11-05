@@ -198,6 +198,9 @@ app.post('/create-user', function (req, res) {
 });
 });    
 
+var dbString = has(password, salt);
+});
+
 
 
 
