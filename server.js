@@ -16,7 +16,7 @@ var config = {
  
   
 };
-var crypto = reques('crypto');
+var crypto = require('crypto');
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
