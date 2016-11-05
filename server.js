@@ -159,7 +159,7 @@ app.get('/ui/th.jpg', function (req, res) {
 
 
 
-/*login codes*/
+
 
 
 function hash(input, salt){
@@ -197,7 +197,6 @@ app.post('/create-user', function (req, res) {
     
 });
 });    
-
 
 
 
