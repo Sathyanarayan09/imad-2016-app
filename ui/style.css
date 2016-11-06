@@ -391,7 +391,7 @@ font-family: 'Libre Baskerville', serif;
 }@-webkit-keyframes zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}
 @-webkit-keyframes zoomOut{0%{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}100%{opacity:0}}@keyframes zoomOut{0%{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}100%{opacity:0}}.zoomOut{-webkit-animation-name:zoomOut;animation-name:zoomOut}
 
-#accordion .panel-title i.glyphicon{
+#accordion .panell-title i.glyphicon{
     -moz-transition: -moz-transform 0.5s ease-in-out;
     -o-transition: -o-transform 0.5s ease-in-out;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -404,29 +404,29 @@ font-family: 'Libre Baskerville', serif;
     transform: rotate(-225deg);
 }
 
-.panel{
+.panell{
     border: 0px;
     border-bottom: 1px solid #f4511e;
 }
-.panel-group .panel+.panel{
+.panell-group .panell+.panell{
     margin-top: 0px;
 }
-.panel-group .panel{
+.panell-group .panell{
     border-radius: 0px;
 }
-.panel-heading{
+.panell-heading{
     border-radius: 0px;
     color: white;
     padding: 25px 15px;
 }
-.panel-custom>.panel-heading{
+.panell-custom>.panell-heading{
     background-color: #f4511e;
 }
-.panel-group .panel:last-child{
+.panell-group .panell:last-child{
     border-bottom: 5px solid #f4511e;
 }
 
-panel-collapse .collapse.in{
+panell-collapse .collapse.in{
     border-bottom:0;
 }
 
