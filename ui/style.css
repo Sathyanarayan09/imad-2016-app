@@ -406,7 +406,7 @@ font-family: 'Libre Baskerville', serif;
 
 .panel{
     border: 0px;
-    border-bottom: 1px solid #30bb64;
+    border-bottom: 1px solid #f4511e;
 }
 .panel-group .panel+.panel{
     margin-top: 0px;
