@@ -93,9 +93,10 @@ font-family: 'Libre Baskerville', serif;
   }
       .intro3
   {  
-	    font-size: 1px;
+	    font-size: 25px;
 
-   
+      display: inline;
+      padding-bottom: 1px;
  
 
       color: #000000;
