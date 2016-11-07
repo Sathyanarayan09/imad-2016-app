@@ -91,6 +91,18 @@ font-family: 'Libre Baskerville', serif;
 	  font-family: 'Source Code Pro', monospace;
 	  
   }
+      .intro3
+  {  
+	    font-size: 25px;
+
+      display: inline;
+      padding-bottom: 1px;
+ 
+
+      color: #ffffff;
+	  font-family: 'Source Code Pro', monospace;
+	  
+  }
    
     .first{
 	  
