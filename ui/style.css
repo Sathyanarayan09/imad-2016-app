@@ -57,6 +57,17 @@ font-family: 'Libre Baskerville', serif;
 	font-family: 'Share Tech Mono', monospace;
 	  
   }
+  
+    .intro3
+  {
+	    font-size: 25px;
+
+ 
+  top: -100px;
+      color: #000000;
+	font-family: 'Share Tech Mono', monospace;
+	  
+  }
 .red{
 	  color: #f4511e;
 	   font-size: 25px;
