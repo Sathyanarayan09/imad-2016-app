@@ -103,7 +103,7 @@ font-family: 'Libre Baskerville', serif;
 	  
   }
    
-    .first{
+    .fir{
 	  
 	   background-image: url('/ui/first.jpg');
   background-size:     cover;  
@@ -112,7 +112,7 @@ font-family: 'Libre Baskerville', serif;
     background-position:  center;  
 
   }
-      .second{
+      .sec{
 	  
 	   background-image: url('/ui/coff.jpg');
   background-size:     cover;  
