@@ -7,12 +7,13 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 	       <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		     <meta charset="utf-8">
  <script type="text/javascript" src="/ui/main.js"> </script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-fixed-top">
@@ -57,15 +58,15 @@
  <br> <br>
   <center><p class="intro1"> Web Design & Developer  </p>
   <br><br><br>
-    <center><p class="intro1"> People ask me why do i <span class="red"> code </span>.. In turn i ask them why do they  <span class="red"> breath </span>..  </p>
+    <center><p class="intro1"> People ask me why do i <span class="red"> code </span>.. In turn i ask them why do they  <span class="red"> breath </span>..  </p> </center>
 	<br>
-	<center><p class="intro1">I'm pursuing B.E Computer Science & Engineering at GKMCET. I transform myself to a Picasso when it comes to my art, Passion for computer stuffs is sky high..  </p>
+	<center><p class="intro1">I'm pursuing B.E Computer Science & Engineering at GKMCET. I transform myself to a Picasso when it comes to my art, Passion for computer stuffs is sky high..  </p></center> 
 	
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700" rel="stylesheet">
     </div>
 <div>
-     <img src="image.jpg" class="responsive" align="right"></div>
+     <img src="/ui/image.jpg" class="responsive" align="right"></div>
 
 
   
@@ -83,7 +84,7 @@
 </h1>
 <br>
 <br>
- <h1 class="text-center hea3"> I'm a kind of person who always want to experiment things that i learn and expose myself to challenging scenario, if an opportunity is provided to me Win! Win! situation is in the making.    </h1>
+<center> <p class="intro1"> I'm a kind of person who always want to experiment things that i learn and expose myself to challenging scenario, if an opportunity is provided to me Win! Win! situation is in the making.    </p>
 </div>
 
 
@@ -167,13 +168,67 @@
 </div>
 <div id="#" class="container-fluid text-center third cover-thing">
   
+<div class="container">
+    <div class="row">
+    <h1 class="hea1">Projects</h1>
+   
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            HR Management system
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body animated zoomOut">
 
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="glyphicon glyphicon-plus"></i>
+                           GKMCET Prompt
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body animated zoomOut">
+ 
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-custom">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                    <i class="glyphicon glyphicon-plus"></i>                    
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                            
+                           E-Voting application
+                        </a>                        
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body animated zoomOut">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </div>
 
 
+
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid cover-thing ">
+<div id="contact" class="container-fluid bg-grey cover-thing ">
   <h2 class="text-center hea2">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -187,15 +242,6 @@
   </div>
   
  <form>
-  <input type="text" class="form-control" id="usr" placeholder="Your Name" required>
-  <br>
-  <input type="email" class="form-control" id="email" placeholder="Your Email" onblur="validateEmail(this);"  required>
-  <br>
-  <textarea class="form-control" rows="5" id="comt" placeholder="Message" required></textarea>
-  <br>
-  <input id="sub" class="btn btn-primary" type="submit" onclick="clearFields('usr')" value="Submit"/> 
-  </form>
-  <hr>
   <input type="text" class="form-control" id="usr" placeholder="Your Name" required>
   <br>
   <input type="email" class="form-control" id="email" placeholder="Your Email" onblur="validateEmail(this);"  required>
@@ -222,13 +268,13 @@ if(document.getElementById("usr").value != '' && document.getElementById("email"
 <hr>
 <br>
 <a href="https://www.facebook.com/sathyanarayan009">
-  <img src="ui/fb.png" alt="facebook" align="right" width="50" height="50">
+  <img src="/ui/fb.png" alt="facebook" align="right" width="50" height="50">
 </a>
 <a href="https://twitter.com/SathyanCeaser09">
-  <img src="ui/t.png" alt="twitter" align="right"  width="50" height="50">
+  <img src="/ui/t.png" alt="twitter" align="right"  width="50" height="50">
 </a>
 <a href="https://www.linkedin.com/in/sathya-narayan-802867107?trk=nav_responsive_tab_profile">
-  <img src="ui/l.png" alt="linkedin" align="right"  width="50" height="50">
+  <img src="/ui/l.png" alt="linkedin" align="right"  width="50" height="50">
 </a>
 <h5> &copy; Sathyanarayan09 | 2016 </h5>
  </div>
@@ -269,6 +315,38 @@ if(document.getElementById("usr").value != '' && document.getElementById("email"
         }
     });
   });
+})
+/*hier me text*/
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000000}";
+        document.body.appendChild(css);
+    };
+    
+   /* scroll*/ 
+    
+    
+    $(function() {
+    function toggleChevron(e) {
+        $(e.target)
+                .prev('.panel-heading')
+                .find("i")
+                .toggleClass('rotate-icon');
+        $('.panel-body.animated').toggleClass('zoomIn zoomOut');
+    }
+    
+    $('#accordion').on('hide.bs.collapse', toggleChevron);
+    $('#accordion').on('show.bs.collapse', toggleChevron);
 })
 </script>
 
