@@ -121,15 +121,7 @@ font-family: 'Libre Baskerville', serif;
 	
 
   }
-  
-    .top2{
-	  
-	   background-image: url('bg2.jpg');
 
-    background-attachment: fixed;
-	
-
-  }
   .paraalign
   {
 	  font-size: 21px;
@@ -197,10 +189,10 @@ font-family: 'Libre Baskerville', serif;
   
   .hea3
   {
-    text-align: justify;
+   
    
       color: #000000;
- font-size:30px;
+ font-size:25px;
 	font-family: 'Share Tech Mono', monospace;
     
 	   text-justify: inter-word;
@@ -236,6 +228,22 @@ font-family: 'Libre Baskerville', serif;
       font-size: 50px;
 	  	font-family: 'Share Tech Mono', monospace;
   }
+  
+  .fa.fa-gamepad
+  
+  {
+	     font-size: 50px;
+	 color: #f4511e;
+	  
+  }
+  .fa.fa-camera{
+    font-size: 50px;
+	 color: #f4511e;
+}
+ .fa.fa-futbol-o {
+    font-size: 50px;
+	 color: #f4511e;
+}
 
   .thumbnail {
       padding: 0 0 15px 0;
@@ -406,3 +414,24 @@ font-family: 'Libre Baskerville', serif;
  
   height: 100vh;
 }
+
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
