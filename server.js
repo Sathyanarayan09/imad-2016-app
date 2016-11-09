@@ -1,26 +1,11 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
-var crypto = require('crypto');
-var bodyParser = require('body-parser');
 
 
 
 
 
-
-
-var config = {
-    user: 'sathyanarayan09',
-    database: 'sathyanarayan09',
-    host: 'db.imad.hasura-app.io',
-    port: '5432',
-  
-  password: process.env.DB_PASSWORD
- 
-  
-};
 
 var app = express();
 app.use(morgan('combined'));
@@ -41,66 +26,6 @@ app.get('/ui/login.html', function (req, res) {
 });
 
 
-
-var pool = new Pool(config);
-app.get('/test-db', function (req, res) {
-
- pool.query('SELECT * FROM articals', function(err, result) {
-     
-     
-     
-     if(err)
-     {
-         
-         res.status(500).send(err.toString());
-     }
-     
-     else
-     {
-         
-         res.send(JSON.stringify(result.rows));
-     }
-}); 
-
-});
-
-app.get('/articals/:articalname', function(req, res)
-{
- 
- 
- 
-pool.query("SELECT * FROM articals where title = '"+ req.params.articalname+"'",function(err, result) {
-      
-     
-     
-     
-     if(err)
-     {
-         
-         res.status(500).send(err.toString());
-     }
-     
-     else
-     {
-         
-        if(result.rows.length===0)
-        {
-            res.status(404).send('Artical not found');
-            
-        }
-        else{
-            
-            var articalDate = result.rows[0];
-            res.send(createTemplate(articalDate));
-        }
-     }
-}); 
- 
- 
- 
- 
- 
-});
 
 
 
@@ -177,7 +102,6 @@ var hashedString = hash(req.params.input, 'thisisrandomstring');
 res.send(hashedString);
 
 });
-
 
 
 
