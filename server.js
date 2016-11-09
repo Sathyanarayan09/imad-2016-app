@@ -37,6 +37,9 @@ app.get('/', function (req, res) {
 app.get('/ui/login.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
+app.get('/ui/ind.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ind.html'));
+});
 
 
 var pool = new Pool(config);
