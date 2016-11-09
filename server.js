@@ -26,16 +26,20 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
+app.get('/ui/ind.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ind.html'));
+});
 
 
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
 
 app.get('/ui/login.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'ind.html'));
-});
+
 
 
 var pool = new Pool(config);
