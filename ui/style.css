@@ -111,17 +111,7 @@ font-family: 'Libre Baskerville', serif;
 
   }
   
-        .third{
-	  
-	   background-image: url('/ui/th.jpg');
-  background-size:     cover;  
- padding-top: 25px; 
-    background-attachment: fixed;
-    background-position:  center;  
-	
-
-  }
-  
+    
     .top2{
 	  
 	   background-image: url('bg2.jpg');
