@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/ui/style.css">
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Sathyanarayan09</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="/ui/style.css" rel="stylesheet" />
+
+  <title>Sathyanarayan </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 	       <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+ <script type="text/javascript" src="/ui/main.js"> </script>
 
-</head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-fixed-top">
@@ -199,17 +196,14 @@
   <input id="sub" class="btn btn-primary" type="submit" onclick="clearFields('usr')" value="Submit"/> 
   </form>
   <hr>
-<br>
-<a href="https://www.facebook.com/sathyanarayan009">
-  <img src="fb.png" alt="facebook" align="right" width="50" height="50">
-</a>
-<a href="https://twitter.com/SathyanCeaser09">
-  <img src="t.png" alt="twitter" align="right"  width="50" height="50">
-</a>
-<a href="https://www.linkedin.com/in/sathya-narayan-802867107?trk=nav_responsive_tab_profile">
-  <img src="l.png" alt="linkedin" align="right"  width="50" height="50">
-</a>
-<h5> &copy; Sathyanarayan09 | 2016 </h5>
+  <input type="text" class="form-control" id="usr" placeholder="Your Name" required>
+  <br>
+  <input type="email" class="form-control" id="email" placeholder="Your Email" onblur="validateEmail(this);"  required>
+  <br>
+  <textarea class="form-control" rows="5" id="comt" placeholder="Message" required></textarea>
+  <br>
+  <input id="sub" class="btn btn-primary" type="submit" onclick="clearFields('usr')" value="Submit"/> 
+  </form>
   </div>
 <script type="text/javascript">
 function clearFields(Input_Id) {
@@ -225,8 +219,19 @@ if(document.getElementById("usr").value != '' && document.getElementById("email"
 	
 }
 </script>
-
-
+<hr>
+<br>
+<a href="https://www.facebook.com/sathyanarayan009">
+  <img src="ui/fb.png" alt="facebook" align="right" width="50" height="50">
+</a>
+<a href="https://twitter.com/SathyanCeaser09">
+  <img src="ui/t.png" alt="twitter" align="right"  width="50" height="50">
+</a>
+<a href="https://www.linkedin.com/in/sathya-narayan-802867107?trk=nav_responsive_tab_profile">
+  <img src="ui/l.png" alt="linkedin" align="right"  width="50" height="50">
+</a>
+<h5> &copy; Sathyanarayan09 | 2016 </h5>
+ </div>
 
 
 
@@ -265,68 +270,6 @@ if(document.getElementById("usr").value != '' && document.getElementById("email"
     });
   });
 })
-/*hier me text*/
-
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 300;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000000}";
-        document.body.appendChild(css);
-    };
-    
-   /* scroll*/ 
-    
-
 </script>
 
 </body>
