@@ -127,9 +127,7 @@ app.get('/ui/f.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'f.jpg'));
 });
 
-app.get('/ui/g.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'g.jpg'));
-});
+
 
 /*login codes*/
 
