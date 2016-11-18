@@ -108,7 +108,28 @@ app.get('/ui/iconth.jpg', function (req, res) {
 });
 
 
+app.get('/ui/a.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'a.jpg'));
+});
+app.get('/ui/b.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'b.jpg'));
+});
+app.get('/ui/c.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'c.jpg'));
+});
+app.get('/ui/d.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'd.jpg'));
+});
+app.get('/ui/e.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'e.jpg'));
+});
+app.get('/ui/f.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'f.jpg'));
+});
 
+app.get('/ui/g.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'g.jpg'));
+});
 
 /*login codes*/
 
