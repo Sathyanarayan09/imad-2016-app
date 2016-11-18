@@ -93,11 +93,11 @@ app.get('/ui/th.jpg', function (req, res) {
 app.get('/ui/icon.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'icon.jpg'));
 });
-app.get('/ui/icon2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'icon2.jpg'));
+app.get('/ui/icontw.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'icontw.jpg'));
 });
-app.get('/ui/icon3.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'icon3.jpg'));
+app.get('/ui/iconth.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'iconth.jpg'));
 });
 
 
