@@ -67,6 +67,6 @@ var TxtType = function(el, toRotate, period) {
     
     $('#accordion').on('hide.bs.collapse', toggleChevron);
     $('#accordion').on('show.bs.collapse', toggleChevron);
-})
+});
     
    /* scroll*/ 
