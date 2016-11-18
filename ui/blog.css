@@ -1,0 +1,119 @@
+ body {
+      	font-family: 'Share Tech Mono', monospace;
+      line-height: 1.8;
+      color: #818181;
+  }
+
+  p {
+      font-size: 15px;
+
+      color: #000000;
+   
+
+  }
+  
+  
+h1{
+	
+	 font-size: 20px;
+
+color: #000000;}
+   
+ .ttl{
+	
+	 font-size: 60px;
+
+      color: #000000;
+   
+}
+
+  .container-fluid {
+      padding: 60px 50px;
+	
+	   align:center;
+  }
+  
+  
+  
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+	  
+  }
+
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+
+
+
+
+
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px;
+      line-height: 1.42857143;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e;
+      background-color: #fff;
+  }
+  .navbar-default .navbar-toggle {
+    
+      color: #f4511e;
+  }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+     
+      animation-duration: 1s;
+      
+      visibility: visible;
+  }
+
+  .con
+  {
+      font-size: 15px;
+ 
+      color: #303030;
+   
+
+  }
+
+
+
+
+
+
+.cover-thing {
+     width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+ 
+  height: 100vh;
+}
