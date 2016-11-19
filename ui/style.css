@@ -476,7 +476,26 @@ font-family: 'Libre Baskerville', serif;
 panel-collapse .collapse.in{
     border-bottom:0;
 }
+  .pro
+  {
+      font-size: 20px;
+	font-family: 'Share Tech Mono', monospace;
+      color: #000000;
+	   text-align: left;
+	    text-decoration: underline;
+   
 
+  }
+    .desc
+  {
+      font-size: 17px;
+	font-family: 'Share Tech Mono', monospace;
+      color: #000000;
+	   text-align: left;
+	
+   
+
+  }
 
   
   
