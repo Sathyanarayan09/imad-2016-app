@@ -135,6 +135,9 @@ app.get('/ui/thra.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'thra.jpg'));
 });
 
+app.get('/ui/logo1.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'logo1.png'));
+});
 
 
 /*login codes*/
