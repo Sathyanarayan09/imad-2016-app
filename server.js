@@ -94,9 +94,8 @@ app.get('/ui/two.jpg', function (req, res) {
 app.get('/ui/one.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'one.jpg'));
 });
-app.get('/ui/th.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'th.jpg'));
-});
+
+
 app.get('/ui/icon.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'icon.jpg'));
 });
