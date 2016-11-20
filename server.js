@@ -138,6 +138,9 @@ app.get('/ui/ico.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ico.png'));
 });
 
+app.get('/ui/th.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'th.jpg'));
+});
 /*login codes*/
 
 
