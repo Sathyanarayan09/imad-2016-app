@@ -36,9 +36,9 @@ app.get('/ui/blog.html', function(req, res)
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
 });
 
-app.get('/ui/test.html', function(req, res)
+app.get('/ui/test.js', function(req, res)
 {
-  res.sendFile(path.join(__dirname, 'ui', 'test.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'test.js'));
 });
 
 
