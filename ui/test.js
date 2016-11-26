@@ -8,7 +8,7 @@ router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: false }));
 
 function hash(password) {
-    var key = crypto.pbkdf2Sync(password, 'VzSalt', 10000, 512, 'sha512');
+    var key = crypto.pbkdf2Sync(password, 'sathyanarayan09', 10000, 512, 'sha512');
     return key.toString('hex');
 }
 
@@ -29,12 +29,9 @@ function makeLoginPage(data) {
 <link rel="apple-touch-icon-precomposed" href="favicon.png">
 <link rel="icon" href="/favicon.png">
 <title>VzBlog - ${pageTitle}</title>
-<meta name="description" content="IMAD NPTEL online course 2016 web app" />
-<meta name="keywords" content="Vatsal, imad, nptel, VaTz88" />
-<meta name="author" content="Vatsal Joshi" />
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-<link href="/css/common.css" rel="stylesheet">
-	<link href="/css/login.css" rel="stylesheet">
+
 </head>
 <body>
 	<header>
@@ -118,7 +115,7 @@ function makeLoginPage(data) {
 }
 
 
-router.post('/login', function (req, res) {
+router.post('/test', function (req, res) {
     var email = req.body.email;
     var password = hash(req.body.password);
 
