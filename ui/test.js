@@ -180,7 +180,7 @@ router.post('/test', function (req, res) {
     }
 });
 
-router.get('/login', function (req, res) {
+router.get('/test', function (req, res) {
     if (req.session && req.session.auth && req.session.auth.userId) {
         res.redirect('/');
     } else {
