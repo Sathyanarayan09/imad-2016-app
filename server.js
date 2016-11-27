@@ -55,7 +55,7 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
-app.get('/ui/image.jpg', function (req, res) {
+app.get('/ui/img/image.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'image.jpg'));
 });
 app.get('/ui/img/fb.png', function (req, res) {
@@ -69,80 +69,80 @@ app.get('/ui/img/l.png', function (req, res) {
 });
 
 
-app.get('/ui/first.jpg', function (req, res) {
+app.get('/ui/img/first.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'first.jpg'));
 });
 
 
-app.get('/ui/coff.jpg', function (req, res) {
+app.get('/ui/img/coff.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'coff.jpg'));
 });
 
-app.get('/ui/j.jpg', function (req, res) {
+app.get('/ui/img/j.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
 });
 
 
-app.get('/ui/three.jpg', function (req, res) {
+app.get('/ui/img/three.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'three.jpg'));
 });
 
-app.get('/ui/four.jpg', function (req, res) {
+app.get('/ui/img/four.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'four.jpg'));
 });
 
 
-app.get('/ui/two.jpg', function (req, res) {
+app.get('/ui/img/two.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'two.jpg'));
 });
-app.get('/ui/one.jpg', function (req, res) {
+app.get('/ui/img/one.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'one.jpg'));
 });
 
 
-app.get('/ui/icon.jpg', function (req, res) {
+app.get('/ui/img/icon.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'icon.jpg'));
 });
-app.get('/ui/icontw.jpg', function (req, res) {
+app.get('/ui/img/icontw.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'icontw.jpg'));
 });
-app.get('/ui/iconth.jpg', function (req, res) {
+app.get('/ui/img/iconth.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'iconth.jpg'));
 });
 
 
-app.get('/ui/a.jpg', function (req, res) {
+app.get('/ui/img/a.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'a.jpg'));
 });
-app.get('/ui/b.jpg', function (req, res) {
+app.get('/ui/img/b.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'b.jpg'));
 });
-app.get('/ui/c.jpg', function (req, res) {
+app.get('/ui/img/c.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'c.jpg'));
 });
-app.get('/ui/d.jpg', function (req, res) {
+app.get('/ui/img/d.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'd.jpg'));
 });
-app.get('/ui/e.jpg', function (req, res) {
+app.get('/ui/img/e.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'e.jpg'));
 });
-app.get('/ui/f.jpg', function (req, res) {
+app.get('/ui/img/f.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'f.jpg'));
 });
 
-app.get('/ui/thrb.jpg', function (req, res) {
+app.get('/ui/img/thrb.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'thrb.jpg'));
 });
 
-app.get('/ui/thra.jpg', function (req, res) {
+app.get('/ui/img/thra.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'thra.jpg'));
 });
 
-app.get('/ui/ico.png', function (req, res) {
+app.get('/ui/img/ico.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ico.png'));
 });
 
-app.get('/ui/th.jpg', function (req, res) {
+app.get('/ui/img/th.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'th.jpg'));
 });
 /*login codes*/
