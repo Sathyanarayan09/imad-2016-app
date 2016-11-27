@@ -58,13 +58,13 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/image.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'image.jpg'));
 });
-app.get('/ui/fb.png', function (req, res) {
+app.get('/ui/img/fb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
 });
-app.get('/ui/t.png', function (req, res) {
+app.get('/ui/img/t.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 't.png'));
 });
-app.get('/ui/l.png', function (req, res) {
+app.get('/ui/img/l.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'l.png'));
 });
 
