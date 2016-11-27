@@ -94,7 +94,7 @@ font-family: 'Libre Baskerville', serif;
    
     .first{
 	  
-	   background-image: url('/ui/first.jpg');
+	   background-image: url('/ui/img/first.jpg');
   background-size:     cover;  
  padding-top: 25px; 
  background-attachment: fixed;
@@ -103,7 +103,7 @@ font-family: 'Libre Baskerville', serif;
   }
       .second{
 	  
-	   background-image: url('/ui/coff.jpg');
+	   background-image: url('/ui/img/coff.jpg');
   background-size:     cover;  
  padding-top: 25px; 
     background-attachment: fixed;
@@ -113,7 +113,7 @@ font-family: 'Libre Baskerville', serif;
   
         .thir{
 	  
-	   background-image: url('/ui/th.jpg');
+	   background-image: url('/ui/img/th.jpg');
   background-size:     cover;  
  padding-top: 25px; 
     background-attachment: fixed;
