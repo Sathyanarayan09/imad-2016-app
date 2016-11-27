@@ -59,27 +59,27 @@ app.get('/ui/img/image.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', 'image.jpg'));
 });
 app.get('/ui/img/fb.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'fb.png'));
 });
 app.get('/ui/img/t.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 't.png'));
+  res.sendFile(path.join(__dirname, 'ui/img', 't.png'));
 });
 app.get('/ui/img/l.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'l.png'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'l.png'));
 });
 
 
 app.get('/ui/img/first.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'first.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'first.jpg'));
 });
 
 
 app.get('/ui/img/coff.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'coff.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'coff.jpg'));
 });
 
 app.get('/ui/img/j.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'j.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'j.jpg'));
 });
 
 
@@ -88,62 +88,62 @@ app.get('/ui/img/three.jpg', function (req, res) {
 });
 
 app.get('/ui/img/four.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'four.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'four.jpg'));
 });
 
 
 app.get('/ui/img/two.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'two.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'two.jpg'));
 });
 app.get('/ui/img/one.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'one.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'one.jpg'));
 });
 
 
 app.get('/ui/img/icon.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'icon.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'icon.jpg'));
 });
 app.get('/ui/img/icontw.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'icontw.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'icontw.jpg'));
 });
 app.get('/ui/img/iconth.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'iconth.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'iconth.jpg'));
 });
 
 
 app.get('/ui/img/a.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'a.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'a.jpg'));
 });
 app.get('/ui/img/b.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'b.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'b.jpg'));
 });
 app.get('/ui/img/c.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'c.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'c.jpg'));
 });
 app.get('/ui/img/d.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'd.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'd.jpg'));
 });
 app.get('/ui/img/e.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'e.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'e.jpg'));
 });
 app.get('/ui/img/f.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'f.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'f.jpg'));
 });
 
 app.get('/ui/img/thrb.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'thrb.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'thrb.jpg'));
 });
 
 app.get('/ui/img/thra.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'thra.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'thra.jpg'));
 });
 
 app.get('/ui/img/ico.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'ico.png'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'ico.png'));
 });
 
 app.get('/ui/img/th.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'th.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'th.jpg'));
 });
 /*login codes*/
 
