@@ -56,7 +56,7 @@ app.get('/ui/main.js', function (req, res) {
 
 
 app.get('/ui/img/image.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'image.jpg'));
+  res.sendFile(path.join(__dirname, 'ui/img', 'image.jpg'));
 });
 app.get('/ui/img/fb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
