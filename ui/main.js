@@ -58,4 +58,21 @@ var TxtType = function(el, toRotate, period) {
     };
     
     
+    var submitButton = document.getElementById('submit_btn');
+submitButton.onclick = function(){
+    var request = new XMLHttpRequest();
+
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE && request.status ===200){
+            var data = JSON.parse(request.responseText);
+            console.log(data);
+        }
+    };
+
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    request.open('POST','http://localhost:8080/create-user',true);
+    request.send(JSON.stringify({username:username,password:password}));
+};
+    
    /* scroll*/ 
