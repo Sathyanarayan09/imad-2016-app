@@ -161,8 +161,6 @@ app.get('/ui/img/th.jpg', function (req, res) {
 });
 /*login codes*/
 
-
-
 function hash (input, salt) {
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
