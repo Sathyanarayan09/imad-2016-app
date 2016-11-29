@@ -232,7 +232,7 @@ app.get('/check-login', function (req, res) {
            if (err) {
               res.status(500).send(err.toString());
            } else {
-              res.redirect('/');    
+              res.redirect('/blog.html');    
            }
        });
    } else {
