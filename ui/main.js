@@ -68,7 +68,7 @@ var TxtType = function(el, toRotate, period) {
         <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <input type="password" class="form-control" id="password" placeholder="Enter Your Password" required>
             </div>
         </div>
         <br/>
