@@ -59,18 +59,22 @@ var TxtType = function(el, toRotate, period) {
     
   function loadLoginForm () {
     var loginHtml = `
-    
-    
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-        <h3>Login/Register to unlock awesome features</h3>
-        <input type="text" class="form-control" id="username" placeholder="username" />
-        <input type="password" class="form-control" id="password" />
-        <br/><br/>
-        <input type="submit" id="login_btn" value="Login" />
-        <input type="submit" id="register_btn" value="Register" />
+  <h3>Login/Register Here for Posting Comments on the Articles!</h3>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter Your Username" required>
+            </div>
+        </div>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+        </div>
+        <br/>
+        <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
+        <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
