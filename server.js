@@ -242,7 +242,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.send('<html><body><a href="/">Logout</a></body></html>');
+   res.send('<html><body> <h2 class="text-center">Thank you for signing up for <span style="color:#F89406;">The</span><span style="color:#26A65B;">Winning</span><span style="color:#19B5FE;">Number</span></h2><a href="/">Logout</a></body></html>');
 });
 
 var pool = new Pool(config);
