@@ -207,21 +207,13 @@ app.post('/article-post', function (req, res) {
     var title = req.body.title;
     var content = req.body.content;
   
-  
-
-    if (title == '' || content == '' ) {
-        // Inform the user on the screen through some message or give him a alert message
-        res.redirect('/article-post');
-        return;
-    }
-    
     //console.log(articledate);
    pool.query('INSERT INTO "articals" (title, content) VALUES ($1, $2)', [title, content], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
       } else {
-          res.send(articletitle +' published successfully.');
+          res.send(title +' published successfully.');
       }
     });
 
