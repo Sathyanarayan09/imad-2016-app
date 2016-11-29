@@ -58,24 +58,14 @@ var TxtType = function(el, toRotate, period) {
     };
     
   function loadLoginForm () {
-         var loginHtml = ` <h3>Login/Register!</h3>
-        <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter Your Username" required>
-            </div>
-        </div>
-        <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter Your Password" required>
-            </div>
-        </div>
-        <br/>
-        <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
-        <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
+    var loginHtml = `
+        <h3>Login/Register to unlock awesome features</h3>
+        <input type="text" id="username" placeholder="username" />
+        <input type="password" id="password" />
+        <br/><br/>
+        <input type="submit" id="login_btn" value="Login" />
+        <input type="submit" id="register_btn" value="Register" />
         `;
-             
     document.getElementById('login_area').innerHTML = loginHtml;
     
     // Submit username/password to login
@@ -107,10 +97,8 @@ var TxtType = function(el, toRotate, period) {
         // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        if (username === '' || password === '') {
-        alert("Username/Password field can't be left empty");
-        return;
-    }
+        console.log(username);
+        console.log(password);
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
@@ -140,10 +128,8 @@ var TxtType = function(el, toRotate, period) {
         // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-     if (username === '' || password === '') {
-        alert("Username/Password field can't be left empty");
-        return;
-    }
+        console.log(username);
+        console.log(password);
         request.open('POST', '/create-user', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
@@ -152,19 +138,11 @@ var TxtType = function(el, toRotate, period) {
     };
 }
 
-function escapeHTML (text)
-{
-    var $text = document.createTextNode(text);
-    var $div = document.createElement('div');
-    $div.appendChild($text);
-    return $div.innerHTML;
-}
-
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi!</h3> <p style="color:#ff0282";font-weight:bold>${escapeHTML(username).toUpperCase()}</p>
-        <a href="/logout"><input type="submit" class="btn btn-default" id="logout" value="Logout" /></a>
+        <h3> Hi <i>${username}</i></h3>
+        <a href="/logout">Logout</a>
     `;
 }
 
@@ -185,10 +163,31 @@ function loadLogin () {
     request.send(null);
 }
 
-
-//site visit counter
-
-
+function loadArticles () {
+        // Check if the user is already logged in
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            var articles = document.getElementById('articles');
+            if (request.status === 200) {
+                var content = '<ul>';
+                var articleData = JSON.parse(this.responseText);
+                for (var i=0; i< articleData.length; i++) {
+                    content += `<li>
+                    <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
+                    (${articleData[i].date.split('T')[0]})</li>`;
+                }
+                content += "</ul>"
+                articles.innerHTML = content;
+            } else {
+                articles.innerHTML('Oops! Could not load all articles!')
+            }
+        }
+    };
+    
+    request.open('GET', '/get-articles', true);
+    request.send(null);
+}
 
 
 // The first thing to do is to check if the user is logged in!
