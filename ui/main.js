@@ -154,8 +154,8 @@ function loadLoggedInUser (username) {
         <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> <h1 align="center"> Publish Your Artical</h1><div class="form-group"><label for="usr">Title:</label><input type="text" class="form-control" placeholder="Type.." id="title"></div><div class="form-group"><label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content"></textarea></div><input type="submit" class="btn btn-default" value="Submit" id="art_sum">
     `;
     
-       var register = document.getElementById('art_sum');
-    register.onclick = function () {
+       var art = document.getElementById('art_sum');
+    art.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
         
