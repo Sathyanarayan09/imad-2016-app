@@ -148,12 +148,21 @@ var TxtType = function(el, toRotate, period) {
     };
 }
 
-
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
+        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> 
         
-         <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a>
+  
+    `;
+    
+}
+
+function loadLoggedInUser () {
+    var loginArea = document.getElementById('login_area');
+    loginArea.innerHTML = `
+        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> 
+        
         <h1 align="center"> Publish Your Artical</h1>
         
        <div class="row control-group">
