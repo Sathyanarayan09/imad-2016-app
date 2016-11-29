@@ -196,6 +196,25 @@ app.post('/create-user', function (req, res) {
    });
 });
 
+app.post('/artical-post', function (req, res) {
+   // username, password
+   // {"username": "tanmai", "password": "password"}
+   // JSON
+   var password = req.body.title;
+   var username = req.body.content;
+   var password = req.body.username;
+  
+  
+   pool.query('INSERT INTO "articals" (title, content, username) VALUES ($1, $2, $3)', [title, content, username], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send('Succesfully Posted artical: ' + title);
+      }
+   });
+});
+
+
 app.post('/login', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
