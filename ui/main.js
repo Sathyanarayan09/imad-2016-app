@@ -151,8 +151,42 @@ var TxtType = function(el, toRotate, period) {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> <h1 align="center"> Publish Your Artical</h1><div class="form-group"><label for="usr">Title:</label><input type="text" class="form-control" placeholder="Type.." id="usr"></div><div class="form-group"><label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="comment"></textarea></div><input type="submit" class="btn btn-default" value="Submit">
+        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> <h1 align="center"> Publish Your Artical</h1><div class="form-group"><label for="usr">Title:</label><input type="text" class="form-control" placeholder="Type.." id="title"></div><div class="form-group"><label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content"></textarea></div><input type="submit" class="btn btn-default" value="Submit" id="art_sum">
     `;
+    
+       var register = document.getElementById('art_sum');
+    register.onclick = function () {
+        // Create a request object
+        var request = new XMLHttpRequest();
+        
+        // Capture the response and store it in a variable
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                  alert('Artical successfully posted');
+                  register.value = 'Posting!';
+              } else {
+                  alert('Could not able to post! try again');
+                  register.value = 'Post';
+              }
+          }
+        };
+        
+        // Make the request
+        var username = document.getElementById('title').value;
+        var password = document.getElementById('content').value;
+        var username = document.getElementById('username').value;
+       console.log(title);
+        console.log(content);
+        console.log(username);
+       
+        request.open('POST', '/artical-post', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify({title: title, content: content, username: username }));  
+        register.value = 'Posting...';
+    
+    };
 }
 
 function loadLogin () {
