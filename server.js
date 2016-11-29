@@ -196,23 +196,45 @@ app.post('/create-user', function (req, res) {
    });
 });
 
+
+
+
 app.post('/artical-post', function (req, res) {
-   // username, password
-   // {"username": "tanmai", "password": "password"}
    // JSON
-   var password = req.body.title;
-   var username = req.body.content;
-   var password = req.body.username;
+   // var username = req.body.username;
+   // var password = req.body.password;
+
+    var title = req.body.articletitle;
+    var content = req.body.articleheading;
+    var username= req.body.username;
   
-  
-   pool.query('INSERT INTO "articals" (title, content, username) VALUES ($1, $2, $3)', [title, content, username], function (err, result) {
+
+    if (title == '' || content == '' ) {
+        // Inform the user on the screen through some message or give him a alert message
+        res.redirect('/publish-article');
+        return;
+    }
+    
+    //console.log(articledate);
+   pool.query('INSERT INTO article(title, content, username) VALUES ($1, $2, $3)', [title, content, username], function (err, result) {
       if (err) {
-          res.status(500).send(err.toString());
+          //res.status(500).send(err.toString());
+          res.redirect('/login');
       } else {
-          res.send('Succesfully Posted artical: ' + title);
+          res.send(articletitle +' published successfully.');
       }
-   });
+    });
+
+   //setTimeout(res.redirect('/login'),5000);
 });
+
+
+
+
+
+
+
+
 
 
 app.post('/login', function (req, res) {
