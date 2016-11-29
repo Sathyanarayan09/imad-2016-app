@@ -163,10 +163,10 @@ function loadLoggedInUser (username) {
         
         <label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content"></textarea></div>
         
-        <input type="submit" class="btn btn-default" id="art_sum" value="Submit" />
+        <input type="submit" class="btn btn-default" id="sum" value="Submit" />
     `;
     
-       var art = document.getElementById('art_sum');
+       var art = document.getElementById('sum');
     art.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
