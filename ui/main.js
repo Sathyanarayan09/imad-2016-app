@@ -191,7 +191,7 @@ function loadLoggedInUser () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert('Artical successfully posted');
+                  alert('Article successfully posted');
                   art.value = 'Posting!';
                   this.setHeader('Location', '/');
               } else {
