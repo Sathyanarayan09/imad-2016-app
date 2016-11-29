@@ -153,7 +153,9 @@ function loadLoggedInUser (username) {
     loginArea.innerHTML = `
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout"> <p align="right">Logout </p></a>
-        <div class="form-group"><label for="comment">Comment:</label>
+        <div class="form-group">
+  <label for="usr">Title:</label><input type="text" class="form-control" id="usr">
+</div><div class="form-group"><label for="comment">Artical Content:</label>
   <textarea class="form-control" rows="5" id="comment"></textarea></div>
     `;
 }
