@@ -151,7 +151,7 @@ var TxtType = function(el, toRotate, period) {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> <h1 align="center"> Publish Your Artical</h1><div class="form-group"><label for="usr">Title:</label><input type="text" class="form-control" placeholder="Type.." id="title"></div><div class="form-group"><label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content"></textarea></div><input type="submit" class="btn btn-default" value="Submit" id="art_sum">
+        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> <h1 align="center"> Publish Your Artical</h1><div class="form-group"><label for="usr">Title:</label><input type="text" class="form-control" placeholder="Type.." id="title"></div><div class="form-group"><label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content"></textarea></div><input type="submit" class="btn btn-default" id="art_sum" value="Submit" />
     `;
     
        var art = document.getElementById('art_sum');
