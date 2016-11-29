@@ -206,7 +206,7 @@ app.post('/artical-post', function (req, res) {
 
     var title = req.body.articletitle;
     var content = req.body.articleheading;
-    var username= req.body.username;
+  
   
 
     if (title == '' || content == '' ) {
@@ -216,7 +216,7 @@ app.post('/artical-post', function (req, res) {
     }
     
     //console.log(articledate);
-   pool.query('INSERT INTO article(title, content, username) VALUES ($1, $2, $3)', [title, content, username], function (err, result) {
+   pool.query('INSERT INTO article(title, content, username) VALUES ($1, $2)', [title, content], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
