@@ -148,7 +148,7 @@ var TxtType = function(el, toRotate, period) {
     };
 }
 
-function loadLoggedInUser (username) {
+function loadLoggedInUser () {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
         <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> 
