@@ -216,7 +216,7 @@ app.post('/artical-post', function (req, res) {
     }
     
     //console.log(articledate);
-   pool.query('INSERT INTO article(title, content) VALUES ($1, $2)', [title, content], function (err, result) {
+   pool.query('INSERT INTO articles(title, content) VALUES ($1, $2)', [title, content], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
