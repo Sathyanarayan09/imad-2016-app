@@ -149,7 +149,7 @@ var TxtType = function(el, toRotate, period) {
 }
 
 
-function loadLoggedInUser () {
+function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
         
@@ -182,7 +182,7 @@ function loadLoggedInUser () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert('Article successfully posted');
+                  alert('Artical successfully posted');
                   art.value = 'Posting!';
               } else {
                   alert('Could not able to post! try again');
