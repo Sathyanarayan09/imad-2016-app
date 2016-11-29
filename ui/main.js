@@ -168,13 +168,13 @@ function loadLoggedInUser (username) {
        <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Title</label>
-                <input type="text" class="form-control" id="title" placeholder="Enter Your Username" required>
+                <input type="text" class="form-control" id="title" placeholder="Type.." required>
             </div>
         </div>
         <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Content</label>
-                <textarea class="form-control" rows="5" id="content"></textarea>
+                <textarea class="form-control" rows="5" placeholder="Type.." id="content"></textarea>
             </div>
         </div>
         
