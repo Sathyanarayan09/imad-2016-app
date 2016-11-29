@@ -147,9 +147,9 @@ var TxtType = function(el, toRotate, period) {
     
     };
 }
-function loadLoggedInUser (username) {
-    var loginArea = document.getElementById('login_area');
-    loginArea.innerHTML = `
+function areas (username) {
+    var area = document.getElementById('area');
+    area.innerHTML = `
         
          <h3> Hi <i>${username}</i></h3>
  >
