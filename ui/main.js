@@ -210,8 +210,7 @@ function loadLoggedInUser (username) {
           if (title == '' || content == '' ) {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why are those fields empty?!');
-        res.redirect('/login');
-        return;
+       
     }
        
         request.open('POST', '/article-post', true);
