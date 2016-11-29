@@ -176,18 +176,21 @@ function loadLoggedInUser (username) {
         // Make the request
         var username = document.getElementById('title').value;
         var password = document.getElementById('content').value;
-        var username = document.getElementById('username').value;
+     
        console.log(title);
         console.log(content);
-        console.log(username);
+        
        
         request.open('POST', '/artical-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content, username: username }));  
+        request.send(JSON.stringify({title: title, content: content, }));  
         register.value = 'Posting...';
     
     };
 }
+
+
+
 
 function loadLogin () {
     // Check if the user is already logged in
