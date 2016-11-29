@@ -165,10 +165,10 @@ function loadLoggedInUser (username) {
               // Take some action
               if (request.status === 200) {
                   alert('Artical successfully posted');
-                  register.value = 'Posting!';
+                  art.value = 'Posting!';
               } else {
                   alert('Could not able to post! try again');
-                  register.value = 'Post';
+                  art.value = 'Post';
               }
           }
         };
