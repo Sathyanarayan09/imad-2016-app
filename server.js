@@ -163,7 +163,6 @@ app.get('/ui/img/th.jpg', function (req, res) {
 
 
 
-
 function hash (input, salt) {
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
@@ -177,7 +176,9 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-  
+   // username, password
+   // {"username": "tanmai", "password": "password"}
+   // JSON
    var username = req.body.username;
    var password = req.body.password;
    var salt = crypto.randomBytes(128).toString('hex');
@@ -190,7 +191,6 @@ app.post('/create-user', function (req, res) {
       }
    });
 });
-
 
 app.post('/login', function (req, res) {
    var username = req.body.username;
@@ -242,16 +242,28 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.status(200).redirect('/?msg=logged%20out');
+   res.send('<html><body>Logged out!<br/><br/><a href="/">Back to home</a></body></html>');
 });
+
+var pool = new Pool(config);
+
+app.get('/get-articles', function (req, res) {
+   // make a select request
+   // return a response with the results
+   pool.query('SELECT * FROM article ORDER BY date DESC', function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(result.rows));
+      }
+   });
+});
+
 
 
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-
-
-
 
 
 
