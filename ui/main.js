@@ -192,11 +192,11 @@ function loadLoggedInUser (username) {
               // Take some action
               if (request.status === 200) {
                   alert('Article successfully posted');
-                  art.value = 'Posting!';
+                  art.value = 'Post succesful!';
                   this.setHeader('Location', '/');
               } else {
                   alert('Could not able to post! try again');
-                  art.value = 'Post failed!';
+                  
               }
           }
         };
