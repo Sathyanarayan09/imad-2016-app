@@ -155,16 +155,17 @@ function loadLoggedInUser (username) {
         
         <h1 align="center"> Publish Your Artical</h1>
         
-        <div class="form-group">
-        
-        <label for="usr">Title:</label>
-        
-        <input type="text" class="form-control" placeholder="Type.." id="title" required>
+       <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Username</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter Your Username" required>
+            </div>
         </div>
-        
-        <div class="form-group">
-        
-        <label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content" required></textarea>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Password</label>
+                <input type="text" class="form-control" id="content" placeholder="Password" required>
+            </div>
         </div>
         
         <input type="submit" class="btn btn-default" id="sum" value="Submit" />
