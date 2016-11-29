@@ -149,7 +149,7 @@ var TxtType = function(el, toRotate, period) {
 }
 
 
-function loadLoggedInUser (username) {
+function loadLoggedInUser () {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
         
