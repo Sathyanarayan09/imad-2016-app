@@ -193,7 +193,7 @@ function loadLoggedInUser () {
               if (request.status === 200) {
                   alert('Artical successfully posted');
                   art.value = 'Posting!';
-                  res.redirect('ui/blog.html');
+                  res.redirect('/ui/blog.html');
               } else {
                   alert('Could not able to post! try again');
                   art.value = 'Post failed!';
