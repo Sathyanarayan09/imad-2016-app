@@ -68,6 +68,10 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+app.get('/ui/postarticals.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'postarticals.html'));
+});
+
 
 app.get('/ui/img/image.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', 'image.jpg'));
@@ -233,6 +237,7 @@ app.get('/check-login', function (req, res) {
               res.status(500).send(err.toString());
            } else {
               res.send(result.rows[0].username);    
+              res.redirect('/');
            }
        });
    } else {
