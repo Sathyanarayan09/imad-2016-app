@@ -199,7 +199,7 @@ app.post('/create-user', function (req, res) {
 
 
 
-app.post('/artical-post', function (req, res) {
+app.post('/article-post', function (req, res) {
    // JSON
    // var username = req.body.username;
    // var password = req.body.password;
@@ -211,7 +211,7 @@ app.post('/artical-post', function (req, res) {
 
     if (title == '' || content == '' ) {
         // Inform the user on the screen through some message or give him a alert message
-        res.redirect('/publish-article');
+        res.redirect('/article-post');
         return;
     }
     
