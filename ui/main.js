@@ -180,7 +180,7 @@ function loadLoggedInUser (username) {
                   art.value = 'Posting!';
               } else {
                   alert('Could not able to post! try again');
-                  art.value = 'Post';
+                  art.value = 'Post failed!';
               }
           }
         };
