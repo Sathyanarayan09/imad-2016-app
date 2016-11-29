@@ -209,6 +209,7 @@ function loadLoggedInUser (username) {
         console.log(content);
           if (title == '' || content == '' ) {
         // Inform the user on the screen through some message or give him a alert message
+         alert('Why is those fields empty?!');
         res.redirect('/login');
         return;
     }
