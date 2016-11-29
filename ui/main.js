@@ -191,8 +191,8 @@ function loadLoggedInUser (username) {
         };
         
         // Make the request
-        var username = document.getElementById('title').value;
-        var password = document.getElementById('content').value;
+        var title = document.getElementById('title').value;
+        var content = document.getElementById('content').value;
      
        console.log(title);
         console.log(content);
