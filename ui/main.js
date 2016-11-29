@@ -207,7 +207,11 @@ function loadLoggedInUser (username) {
      
        console.log(title);
         console.log(content);
-        
+          if (title == '' || content == '' ) {
+        // Inform the user on the screen through some message or give him a alert message
+        res.redirect('/article-post');
+        return;
+    }
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
