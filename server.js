@@ -248,6 +248,9 @@ app.get('/logout', function (req, res) {
 });
 
 
+app.get('/ui/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
+});
 
 
 
