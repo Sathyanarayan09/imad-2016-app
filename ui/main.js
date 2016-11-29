@@ -159,12 +159,12 @@ function loadLoggedInUser (username) {
         
         <label for="usr">Title:</label>
         
-        <input type="text" class="form-control" placeholder="Type.." id="title">
+        <input type="text" class="form-control" placeholder="Type.." id="title" required>
         </div>
         
         <div class="form-group">
         
-        <label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content"></textarea>
+        <label for="comment">Artical Content:</label><textarea placeholder="type.." class="form-control" rows="5" id="content" required></textarea>
         </div>
         
         <input type="submit" class="btn btn-default" id="sum" value="Submit" />
