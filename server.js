@@ -237,7 +237,7 @@ app.get('/check-login', function (req, res) {
               res.status(500).send(err.toString());
            } else {
                
-              res.redirect('/ui/postarticals.html');
+              res.send(result.rows[0].username);    
            }
        });
    } else {
