@@ -58,7 +58,7 @@ var TxtType = function(el, toRotate, period) {
     };
     
   function loadLoginForm () {
-         var loginHtml = ` <h3>Login/Register Here for Posting Comments on the Articles!</h3>
+         var loginHtml = ` <h3>Login/Register!</h3>
         <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Username</label>
