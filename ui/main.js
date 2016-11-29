@@ -193,9 +193,11 @@ function loadLoggedInUser () {
               if (request.status === 200) {
                   alert('Artical successfully posted');
                   art.value = 'Posting!';
+                  
               } else {
                   alert('Could not able to post! try again');
                   art.value = 'Post failed!';
+                  
               }
           }
         };
