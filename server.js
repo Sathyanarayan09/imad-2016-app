@@ -204,8 +204,8 @@ app.post('/artical-post', function (req, res) {
    // var username = req.body.username;
    // var password = req.body.password;
 
-    var title = req.body.articletitle;
-    var content = req.body.articleheading;
+    var title = req.body.title;
+    var content = req.body.content;
   
   
 
@@ -216,7 +216,7 @@ app.post('/artical-post', function (req, res) {
     }
     
     //console.log(articledate);
-   pool.query('INSERT INTO article(title, content, username) VALUES ($1, $2)', [title, content], function (err, result) {
+   pool.query('INSERT INTO article(title, content) VALUES ($1, $2)', [title, content], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
