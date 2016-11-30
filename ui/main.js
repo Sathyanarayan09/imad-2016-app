@@ -209,6 +209,9 @@ function loadLoggedInUser (username) {
         var title = document.getElementById('title').value;
         var content = document.getElementById('content').value;
          var username = document.getElementById('username').value;
+         var now = moment()
+       var formatted = now.format('YYYY-MM-DD HH:mm:ss Z')
+      console.log(formatted)
        console.log(title);
         console.log(content);
           if (title == '' || content == '' username == '' ) {
@@ -219,7 +222,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content, username: username}));  
+        request.send(JSON.stringify({title: title, content: content, username: username, formatted: formatted }));  
         register.value = 'Posting...';
     
     };
