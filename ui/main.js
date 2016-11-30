@@ -166,7 +166,7 @@ function loadLoggedInUser (username) {
         <h1 align="center"> Publish Your Artical</h1>
         <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Title</label>
+              <label>Author Name</label>
                 <input type="text" class="form-control" id="author" placeholder="Type.." required>
             </div>
        <div class="row control-group">
