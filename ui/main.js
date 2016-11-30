@@ -164,10 +164,7 @@ function loadLoggedInUser (username) {
        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> 
         
         <h1 align="center"> Publish Your Artical</h1>
-        <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Author Name</label>
-                <input type="text" class="form-control" id="username" placeholder="Type.." required></div>
+        
        <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Title</label>
@@ -207,13 +204,10 @@ function loadLoggedInUser (username) {
         // Make the request
         var title = document.getElementById('title').value;
         var content = document.getElementById('content').value;
-         var username = document.getElementById('username').value;
-         var now = moment()
-       var formatted = now.format('YYYY-MM-DD HH:mm:ss Z')
-      console.log(formatted)
+     
        console.log(title);
         console.log(content);
-          if (title == '' || content == '' username == '' ) {
+          if (title == '' || content == '' ) {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
        
@@ -221,7 +215,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content, username: username, formatted: formatted }));  
+        request.send(JSON.stringify({title: title, content: content}));  
         register.value = 'Posting...';
     
     };
