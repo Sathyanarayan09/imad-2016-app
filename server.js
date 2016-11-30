@@ -207,7 +207,7 @@ app.post('/article-post', function (req, res) {
     var title = req.body.title;
     var content = req.body.content;
     var username = req.body.username;
-     
+   var formatted  = req.body.formatted ;  
      if (title == '' || content == '' ) {
         // Inform the user on the screen through some message or give him a alert message
         res.redirect('/article-post');
@@ -216,7 +216,7 @@ app.post('/article-post', function (req, res) {
     
   
     //console.log(articledate);
-   pool.query('INSERT INTO "articals" (title, content, username) VALUES ($1, $2, $3)', [title, content, username], function (err, result) {
+   pool.query('INSERT INTO "articals" (title, content, username, formatted ) VALUES ($1, $2, $3, $4)', [title, content, username, formatted], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
