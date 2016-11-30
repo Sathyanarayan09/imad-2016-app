@@ -17,7 +17,7 @@
         <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
         <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
         `;
-    document.getElementById('login_area').innerHTML = loginHtml;
+    document.getElementById('dw').innerHTML = loginHtml;
     
     // Submit username/password to login
     var submit = document.getElementById('login_btn');
