@@ -74,6 +74,9 @@ app.get('/ui/article.html', function (req, res) {
 app.get('/ui/article.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article.js'));
 });
+app.get('/ui/art.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'art.js'));
+});
 
 
 app.get('/ui/img/image.jpg', function (req, res) {
