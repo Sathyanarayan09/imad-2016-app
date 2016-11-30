@@ -164,7 +164,11 @@ function loadLoggedInUser (username) {
        <h3> Hi <i>${username}</i></h3><a href="/logout"> <p align="right">Logout </p></a> 
         
         <h1 align="center"> Publish Your Artical</h1>
-        
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Title</label>
+                <input type="text" class="form-control" id="author" placeholder="Type.." required>
+            </div>
        <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Title</label>
@@ -204,10 +208,11 @@ function loadLoggedInUser (username) {
         // Make the request
         var title = document.getElementById('title').value;
         var content = document.getElementById('content').value;
-     
+         var  author = document.getElementById('author').value;
+    
        console.log(title);
         console.log(content);
-          if (title == '' || content == '' ) {
+          if (title == '' || content == '' || author == '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
        
@@ -215,7 +220,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content}));  
+        request.send(JSON.stringify({title: title, content: content, author: author}));  
         register.value = 'Posting...';
     
     };
