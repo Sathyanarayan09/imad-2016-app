@@ -204,7 +204,7 @@ function loadLoggedInUser (username) {
         // Make the request
         var title = document.getElementById('title').value;
         var content = document.getElementById('content').value;
-     
+         var username = document.getElementById('username').value;
        console.log(title);
         console.log(content);
           if (title == '' || content == '' ) {
@@ -215,7 +215,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content}));  
+        request.send(JSON.stringify({title: title, content: content, username: username}));  
         register.value = 'Posting...';
     
     };
