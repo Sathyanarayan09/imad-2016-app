@@ -120,7 +120,7 @@ function loadLoggedInUser (username) {
         </div>
         
         <input type="submit" class="btn btn-default" id="sum" value="Submit" />
-        <a href="article.html" class="btn btn-info" role="button">View Articles</a>
+        
     `;
     
        var art = document.getElementById('sum');
