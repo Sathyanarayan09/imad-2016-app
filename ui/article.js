@@ -95,11 +95,7 @@ function loadLoggedInUser (username) {
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout">Logout</a>
                 <h1 align="center"> Publish Your Artical</h1>
-        <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Author Name</label>
-                <input type="text" class="form-control" id="author" placeholder="Type.." required>
-            </div></div>
+        
        <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Title</label>
@@ -153,7 +149,7 @@ function loadLoggedInUser (username) {
        console.log(title);
         console.log(content);
           console.log(heading);
-            console.log(author);
+           
           if (title == '' || content == '' ||  heading == '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
