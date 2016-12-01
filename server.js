@@ -270,7 +270,7 @@ app.post('/article-post', function (req, res) {
    pool.query('INSERT INTO "article" (title, heading, date, content, author) VALUES ($1, $2, $3, $4. $5)', [title, heading, date, content, author], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
-          res.redirect('/article.html');
+       
       } else {
           res.send(title +' published successfully.');
       }
