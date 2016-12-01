@@ -142,7 +142,7 @@ function loadLoggedInUser (username) {
         // Make the request
         var title = document.getElementById('title').value;
         var content = document.getElementById('content').value;
-         var  author = document.getElementById('author').value;
+  
           var  heading = document.getElementById('heading').value;
            var date = new Date();
     
@@ -150,7 +150,7 @@ function loadLoggedInUser (username) {
         console.log(content);
           console.log(heading);
             console.log(author);
-          if (title == '' || content == '' ||  heading == '' || author == '') {
+          if (title == '' || content == '' ||  heading == '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
        
@@ -158,7 +158,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content, author: author, heading: heading, date: date}));  
+        request.send(JSON.stringify({title: title, content: content, author: author, heading: heading}));  
         register.value = 'Posting...';
     
     };
