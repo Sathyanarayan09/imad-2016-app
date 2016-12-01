@@ -23,11 +23,13 @@ function loadCommentForm () {
     
       <link rel="icon" type="/ui/img/ico.png" href="/ui/img/ico.png"/>
     </head>
+    <body>
         
         <textarea id="comment_text" rows="5"  class="form-control" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/>
         <input type="submit" id="submit" class="btn btn-default" value="Submit" />
         <br/>
+        </body></html>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
     
