@@ -258,7 +258,7 @@ app.post('/article-post', function (req, res) {
     var content = req.body.content;
     var author = req.body.author;
      var heading = req.body.heading;
-  
+  var date = req.body.date;
      if (title == '' || content == '' || author == '' heading == '' ) {
         // Inform the user on the screen through some message or give him a alert message
         res.redirect('/article-post');
