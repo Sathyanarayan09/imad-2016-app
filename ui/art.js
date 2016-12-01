@@ -5,11 +5,7 @@ function loadCommentForm () {
     var commentFormHtml = `
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-
-
-  <meta charset="utf-8">
+<head><meta charset="utf-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,14 +14,10 @@ function loadCommentForm () {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="icon" type="/ui/img/ico.png" href="/ui/img/ico.png"/>
-  </head>
-    <head>    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-      <link rel="icon" type="/ui/img/ico.png" href="/ui/img/ico.png"/>
+  </head> <head>    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="/ui/img/ico.png" href="/ui/img/ico.png"/>
     </head>
-    <body>
-        
-        <textarea id="comment_text" rows="5"  class="form-control" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
+    <body> <textarea id="comment_text" rows="5"  class="form-control" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/>
         <input type="submit" id="submit" class="btn btn-default" value="Submit" />
         <br/>
