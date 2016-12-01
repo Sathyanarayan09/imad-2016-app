@@ -148,7 +148,7 @@ function loadLoggedInUser (username) {
         var content = document.getElementById('content').value;
          var  author = document.getElementById('author').value;
           var  heading = document.getElementById('heading').value;
-         var date = new Date();
+           var date = new Date();
     
        console.log(title);
         console.log(content);
