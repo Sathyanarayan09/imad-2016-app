@@ -259,7 +259,7 @@ app.post('/article-post', function (req, res) {
     var author = req.body.author;
      var heading = req.body.heading;
   
-     if (title == '' || content == '' || author == '' ) {
+     if (title == '' || content == '' || author == '' heading == '' ) {
         // Inform the user on the screen through some message or give him a alert message
         res.redirect('/article-post');
         return;
@@ -267,7 +267,7 @@ app.post('/article-post', function (req, res) {
     
   
     //console.log(articledate);
-   pool.query('INSERT INTO "articles" (title, content, author) VALUES ($1, $2, $3)', [title, content, author], function (err, result) {
+   pool.query('INSERT INTO "article" (title, heading, date, content, author) VALUES ($1, $2, $3, $4. $5)', [title, heading, date, content, author], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
