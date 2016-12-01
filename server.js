@@ -258,6 +258,7 @@ app.post('/article-post', function (req, res) {
     var content = req.body.content;
 
      var heading = req.body.heading;
+      var date = req.body.date;
   
      if (title == '' || content == '' || heading == '' ) {
         // Inform the user on the screen through some message or give him a alert message
@@ -267,7 +268,7 @@ app.post('/article-post', function (req, res) {
     
   
     //console.log(articledate);
-   pool.query('INSERT INTO "article" (title, heading, content) VALUES ($1, $2, $3)', [title,heading, content], function (err, result) {
+   pool.query('INSERT INTO "article" (title, heading, content, date) VALUES ($1, $2, $3, $4)', [title,heading, content, date], function (err, result) {
       if (err) {
           //res.status(500).send(err.toString());
           res.redirect('/login');
