@@ -173,7 +173,7 @@ function loadLoggedInUser (username) {
           if (title == '' || content == '' ||  heading == '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
-       
+       return false;
     }
        
         request.open('POST', '/article-post', true);
