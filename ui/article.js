@@ -124,6 +124,8 @@ function loadLoggedInUser (username) {
         // Create a request object
         var request = new XMLHttpRequest();
         
+        var date = new Date();
+
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
           if (request.readyState === XMLHttpRequest.DONE) {
@@ -158,7 +160,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content, heading: heading}));  
+        request.send(JSON.stringify({title: title, content: content, heading: heading, date: date}));  
         register.value = 'Posting...';
     
     };
