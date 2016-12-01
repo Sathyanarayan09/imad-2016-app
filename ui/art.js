@@ -36,6 +36,14 @@ function loadCommentForm () {
         
         // Make the request
         var comment = document.getElementById('comment_text').value;
+        
+              if (comment == '') {
+        // Inform the user on the screen through some message or give him a alert message
+         alert('Enter some Comment..');
+         return false;
+       
+    }
+        
         request.open('POST', '/submit-comment/' + currentArticleTitle, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({comment: comment}));  
