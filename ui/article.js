@@ -152,7 +152,9 @@ function loadLoggedInUser (username) {
     
        console.log(title);
         console.log(content);
-          if (title == '' || content == '' ||  heading == '' || author == '') {
+          console.log(heading);
+            console.log(author);
+          if (title === '' || content === '' ||  heading === '' || author === '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
        
