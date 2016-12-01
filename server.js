@@ -257,6 +257,7 @@ app.post('/article-post', function (req, res) {
     var title = req.body.title;
     var content = req.body.content;
     var author = req.body.author;
+     var heading = req.body.heading;
   
      if (title == '' || content == '' || author == '' ) {
         // Inform the user on the screen through some message or give him a alert message
