@@ -158,7 +158,7 @@ function loadLoggedInUser (username) {
        
         request.open('POST', '/article-post', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({title: title, content: content, author: author, heading: heading}));  
+        request.send(JSON.stringify({title: title, content: content, heading: heading}));  
         register.value = 'Posting...';
     
     };
