@@ -54,6 +54,7 @@ function loadLoginForm () {
              if (username == '' || password == '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
+         return false;
        
     }
         request.open('POST', '/login', true);
@@ -94,6 +95,7 @@ function loadLoginForm () {
            if (username == '' || password == '') {
         // Inform the user on the screen through some message or give him a alert message
          alert('Why is that field empty?!');
+         return false;
        
     }
         
