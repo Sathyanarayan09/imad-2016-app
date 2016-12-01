@@ -116,6 +116,46 @@ function loadLoggedInUser (username) {
         <input type="submit" class="btn btn-default" id="sum" value="Submit" />
         <a href="article.html" class="btn btn-info" role="button">View Articles</a>
     `;
+    
+       var art = document.getElementById('sum');
+    art.onclick = function () {
+        // Create a request object
+        var request = new XMLHttpRequest();
+        
+        // Capture the response and store it in a variable
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              // Take some action
+              if (request.status === 200) {
+                  alert('Article successfully posted');
+                  art.value = 'Posted succesful!';
+                  this.setHeader('Location', '/');
+              } else {
+                  alert('Could not able to post! try again');
+                  
+              }
+          }
+        };
+        
+        // Make the request
+        var title = document.getElementById('title').value;
+        var content = document.getElementById('content').value;
+         var  author = document.getElementById('author').value;
+    
+       console.log(title);
+        console.log(content);
+          if (title == '' || content == '' || author == '') {
+        // Inform the user on the screen through some message or give him a alert message
+         alert('Why is that field empty?!');
+       
+    }
+       
+        request.open('POST', '/article-post', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify({title: title, content: content, author: author}));  
+        register.value = 'Posting...';
+    
+    };
 }
 
 function loadLogin () {
