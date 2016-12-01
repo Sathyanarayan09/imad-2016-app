@@ -94,6 +94,27 @@ function loadLoggedInUser (username) {
     loginArea.innerHTML = `
         <h3> Hi <i>${username}</i></h3>
         <a href="/logout">Logout</a>
+                <h1 align="center"> Publish Your Artical</h1>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Author Name</label>
+                <input type="text" class="form-control" id="author" placeholder="Type.." required>
+            </div></div>
+       <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Type.." required>
+            </div>
+        </div>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Content</label>
+                <textarea class="form-control" rows="5" placeholder="Type.." id="content"></textarea>
+            </div>
+        </div>
+        
+        <input type="submit" class="btn btn-default" id="sum" value="Submit" />
+        <a href="article.html" class="btn btn-info" role="button">View Articles</a>
     `;
 }
 
