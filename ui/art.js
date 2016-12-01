@@ -3,6 +3,8 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
+    
+    <head>    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
         <h5>Submit a comment</h5>
         <textarea id="comment_text" rows="5"  class="form-control" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/>
