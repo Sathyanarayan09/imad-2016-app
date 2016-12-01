@@ -50,6 +50,12 @@ function loadLoginForm () {
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
+        
+             if (username == '' || password == '') {
+        // Inform the user on the screen through some message or give him a alert message
+         alert('Why is that field empty?!');
+       
+    }
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
@@ -76,11 +82,21 @@ function loadLoginForm () {
           }
         };
         
+        
+        
+        
         // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
+        
+           if (username == '' || password == '') {
+        // Inform the user on the screen through some message or give him a alert message
+         alert('Why is that field empty?!');
+       
+    }
+        
         request.open('POST', '/create-user', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
